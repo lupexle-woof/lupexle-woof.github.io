@@ -1,0 +1,18 @@
+* {
+	font-family: 'Roboto', sans-serif;
+	
+}
+
+body {
+	font-weight: 100;
+	background-color: rgb(35, 41, 49);
+	color: rgb(247, 247, 247);
+}
+
+h3 {
+	margin: 2%
+}
+
+p {
+	font-weight: 300;
+}
