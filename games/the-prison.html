@@ -9,16 +9,16 @@
 </head>
 <body>
 <tw-story><noscript><tw-noscript>JavaScript needs to be enabled to play The Prison.</tw-noscript></noscript></tw-story>
-<tw-storydata name="The Prison" startnode="1" creator="Twine" creator-version="2.3.13" ifid="9F2F6945-72EC-4333-8E62-23F2577AFCAC" zoom="1" format="Harlowe" format-version="3.2.1" options="" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css"></style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-passagedata pid="1" name="Beginning" tags="" position="620,244.5" size="100,100">&lt;h1 style=&quot;font-family:impact;font-size:140%;text-align:center;&quot;&gt;THE PRISON&lt;/h1&gt;
+<tw-storydata name="The Prison" startnode="1" creator="Twine" creator-version="2.3.13" ifid="9F2F6945-72EC-4333-8E62-23F2577AFCAC" zoom="1" format="Harlowe" format-version="3.2.1" options="" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css"></style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-passagedata pid="1" name="Beginning" tags="" position="675,50" size="100,100">&lt;h1 style=&quot;font-family:impact;font-size:140%;text-align:center;&quot;&gt;THE PRISON&lt;/h1&gt;
 
 You&#39;re an ordinary guy doing ordinary things, when you are somehow captured. Trapped inside of a mysterious prison, you must find your way out - before succumbing to whatever &#39;dangers&#39; lurk within.
 
 &lt;i&gt;Can you escape The Prison or will you end up being a part of whatever nefarious plans await?&lt;/i&gt;
 
-&lt;b&gt;(text-colour:#f00)[Disclaimer: This game contains naughty stuff so if you are not of the legal age to view adult content, do not proceed].&lt;/b&gt;
+&lt;b&gt;(text-colour:#f00)[Disclaimer: This game contains naughty stuff so if you are not of the legal age to view adult content, do not proceed.]&lt;/b&gt;
 
 &lt;p style=&quot;text-align:center;&quot;&gt;&lt;b&gt;[[Click to Begin-&gt;Begin]]&lt;/b&gt;&lt;/p&gt;
-&lt;p style=&quot;text-align:right;&quot;&gt;&lt;small&gt;Version 2.1: Cat n&#39; Doge&lt;/small&gt;&lt;/p&gt;</tw-passagedata><tw-passagedata pid="2" name="Begin" tags="" position="740,244.5" size="100,100">You groan. Where are you? What happened?
+&lt;p style=&quot;text-align:right;&quot;&gt;&lt;small&gt;Version 2.1: Cat n&#39; Doge&lt;/small&gt;&lt;/p&gt;</tw-passagedata><tw-passagedata pid="2" name="Begin" tags="" position="675,175" size="100,100">You groan. Where are you? What happened?
 
 Groggy, you rise up, looking around in confusion.
 
@@ -26,7 +26,614 @@ You are in a windowless concrete cell, about eight feet by eight feet. Cracks li
 
 You were lying on a patch of scratchy hay, and the only thing you&#39;re wearing is oddly a blue hospital gown, which not only makes you physically, but mentally uncomfortable. Why are you wearing this?
 
-You hear footsteps outside approaching your cell.</tw-passagedata></tw-storydata>
+You hear footsteps outside approaching your cell.
+
+
+* [[Attempt to hide-&gt;Hide]] from the approaching person.
+* [[Go find out who&#39;s approaching-&gt;HorseApproach]]. Maybe they have answers.
+
+(set: $mindmeter to 0)
+(set: $gown to true)
+(set: $brentBound to false)
+(set: $cellKey to false)
+(set: $brentJailed to false)</tw-passagedata><tw-passagedata pid="3" name="Hide" tags="" position="375,225" size="100,100">Anxious, you back away, frantically looking for some place to hide away, but there&#39;s nowhere to hide!
+
+With the footsteps fast approaching, you dash over and huddle near the back corner of the cell.
+
+This turns out to be a big mistake as the sudden fetid odour of some absent creature hits you like a train. Your eyes water as the smell seeps into your mouth and you feel the overwhelming need to cough and get away, but the footsteps are just about to pass your cell.
+
+
+* [[Back off!-&gt;BackOff]]
+* [[Stay put!-&gt;StayPut]]</tw-passagedata><tw-passagedata pid="4" name="HorseApproach" tags="" position="675,325" size="100,100">Seeing as there&#39;s nowhere to go, you decide to confront whoever is approaching your cell, hoping for some answers.
+
+With more than a bit of trepidation, you walk to the front of the cell, peering out. In a few seconds, the person making the footsteps comes into view.
+
+The figure turns out to be a horse, except it is standing upright. You audibly gasp, shocked. The sound catches the attention of the horse, who begins walking towards your cell at a quicker pace than the leisurely one it was going at before. It has a long mane of white hair, and a shiny coat of tan fur all over its heavily muscled body.
+
+Around its waist, it is wearing a leather belt where a metal loop with a single key hangs off. A scrap of torn cloth is also attached to the front of the belt, obscuring, quite ineffectively, the horse&#39;s male parts.
+
+&quot;//Well, well. Hey there little fella&#39;,//&quot; the horse says with a grin on his long muzzle. He tosses his mane back and flicks his tail as he approaches. &quot;//Nice to be awake isn&#39;t it?//&quot;
+
+[[Demand freedom!-&gt;DemandFreedom]]
+[[Ask questions, you have a lot.-&gt;AskQuestions]]</tw-passagedata><tw-passagedata pid="5" name="BackOff" tags="" position="475,350" size="100,100">This is impossible. The fire in your lungs overtakes you and instinctively stumble back, hacking and coughing, trying to forcibly remove the smell from your nose and mouth. You can even still taste it.
+
+It takes a few moments for you to recover, so it&#39;s no surprise that when you do, there are no more footsteps. Nervously, you turn around.
+
+Standing in front of your cell is a horse, with a shiny tan coloured coat of fur and a long white mane. But this horse is standing on two legs.
+
+It looks at you with a sneer on its long muzzle, thickly muscled arms crossed over its equally toned body. Around its waist, you notice a leather belt, upon which hangs a metal ring with a single key. The ragged piece of cloth seems to have been attached to the front as well, in a fairly ineffective attempt at obscuring the horse&#39;s maleness.
+
+&quot;//What&#39;s wrong there, little fella&#39;? Don&#39;t like the smell of animal in the morning?//&quot; He gives a short whinny that you suppose is him laughing. You scowl at that.
+
+Well, that didn&#39;t work.
+
+
+* [[Demand freedom!-&gt;DemandFreedom]]
+* [[Ask questions, you have a lot.-&gt;AskQuestions]]</tw-passagedata><tw-passagedata pid="6" name="StayPut" tags="" position="300,350" size="100,100">Against all odds, you kick your willpower into overdrive, holding absolutely still, trying not to breath despite your hammering heart crying out from oxygen deprivation.
+
+Slowly, the footsteps pass you with a distinct &lt;i&gt;clack&lt;/i&gt;, and were you not nearly passing out you might&#39;ve been able to figure out what it reminded you of.
+
+Try as you might, you can&#39;t help but breathe, drawing in the smell in slow, laboured breaths. Your head swims, dizzy from lack of breathing, the smell, or both, you don&#39;t know.
+
+Fortunately, before you know it, the footsteps have moved on, having passed you completely without stopping. Relieved, you make sure that they are far away before crawling away from the corner, stifling the ensuing coughs.
+
+Now that they&#39;re gone, you have some time to figure out what to do. Hopefully before they come back.
+
+
+* [[Wait.-&gt;Wait]]
+* [[Look out.-&gt;LookOut]]
+
+(set: $mindmeter to $mindmeter + 4)</tw-passagedata><tw-passagedata pid="7" name="Wait" tags="" position="350,475" size="100,100">With the immediate threat gone, you decide to wait.
+
+Perhaps if you bide your time, an opportunity to escape will present itself, at least, you hope.
+
+Just standing here, you can&#39;t help but feel increasingly uncomfortable wearing the hospital gown. You could always (link-reveal:&quot;take it off&quot;)[(t8n:&quot;dissolve&quot;)(show: ?ungown)], you realize.
+(hidden:)|ungown&gt;[
+You doff the garment, tossing it to the ground next to the hay. A shiver immediately runs down your spine, but though you feel weird, you are also much more comfortable now.(set: $mindmeter to $mindmeter + 2)(set: $gown to false)]
+
+
+[[Wait some more...-&gt;Wait2]]</tw-passagedata><tw-passagedata pid="8" name="LookOut" tags="" position="225,475" size="100,100">You peer out the cell. From what you can tell in your limited peripherals, the outside is just a long hallway, stretching to either side, presumably with cells adjacent to your own.
+
+Antiquated electric lights keep the hallway surprisingly well lit.
+
+There&#39;s nothing distinguishable about it either. Unfortunately, it doesn&#39;t seem like you can do much.
+
+There&#39;s not much of a choice but to just [[wait now.-&gt;Wait]]</tw-passagedata><tw-passagedata pid="9" name="DemandFreedom" tags="" position="600,475" size="100,100">Recovering from your shock, a desperate lividness wells up within you.
+
+&quot;//Release me!//&quot; you shout angrily, cutting to the chase. &quot;//You can&#39;t imprison me like this.//&quot;
+
+Mustering your courage, you step up, grasping the bars of the cell, almost faltering when realizing how tall the stallion is compared to you.
+
+With a smirk firmly set on his face, he leans down to face you. Close enough so that as he speaks, you can smell his breath.
+
+&quot;//Release you? You think I&#39;m walking around looking for prisoners to free, huh? And they said I was the dumb one.//&quot;
+
+
+Mind as well [[ask some questions.-&gt;AskQuestions]]</tw-passagedata><tw-passagedata pid="10" name="AskQuestions" tags="" position="725,475" size="100,100">Whatever&#39;s going on, you need to know, because everything is just too crazy right now. The horse looks at you with a blank, expectant gaze. (set: _name = &quot;The horse&quot;)(set: _asked to false)
+
+
+(link:&quot;Who are you?&quot;)[&quot;//Who are you?//&quot; you ask.
+The horse shrugs.
+&quot;//I think my name was Brent.//&quot;(set: _name to &quot;Brent&quot;)(set: _asked to true)(replace: ?nvm)[[[Done-&gt;DoneQuestions]]]]
+
+(link:&quot;What are you?&quot;)[&quot;//What are you?//&quot; you venture.
+_name gives you a funny look, which is strange given his equine head, and then gives a neighing laugh.
+&quot;//I&#39;m a horse!//&quot; he declares, flexing his biceps.(if:_asked is false)[(replace: ?nvm)[(link:&quot;Done&quot;)[After a moment of nothing, the horse chimes up.
+&quot;//What, waiting for me to introduce myself? I think the name was Brent.//&quot;
+
+[[Continue-&gt;DoneQuestions]]]]]]
+
+(link:&quot;Why are you guarding this place?&quot;)[&quot;//Why are you guarding this place? Are you the one who put me in here?//&quot; you demand.
+With a shake of his head which tosses about that long, lustrious mane, _name says, &quot;//I&#39;m not the one who put you here, and trust me, I wouldn&#39;t wanna waste my time patrollin&#39; anyhow.//&quot;
+You&#39;re a bit miffed by his vague answer.(if:_asked is false)[(replace: ?nvm)[(link:&quot;Done&quot;)[After a moment of nothing, the horse chimes up.
+&quot;//What, waiting for me to introduce myself? I think the name was Brent.//&quot;
+
+[[Continue-&gt;DoneQuestions]]]]]]
+
+|nvm&gt;[(link:&quot;Never mind.&quot;)[After a moment of nothing, the horse chimes up.
+&quot;//What, waiting for me to introduce myself? I think the name was Brent.//&quot;
+
+[[Continue-&gt;DoneQuestions]]]]</tw-passagedata><tw-passagedata pid="11" name="Wait2" tags="" position="475,475" size="100,100">You mill about a bit longer, waiting for something to happen.
+
+Eventually, something does, but it&#39;s not what you were praying for. Those same footsteps now ring out from the opposite direction, having come back.
+
+Once again, you are faced with two choices.
+
+
+* [[Hide again.-&gt;Hide2]] The smell isn&#39;t that bad, you could probably endure it again...
+* This isn&#39;t getting anywhere, mind as well [[find out who they are-&gt;HorseApproach]].</tw-passagedata><tw-passagedata pid="12" name="Hide2" tags="" position="575,625" size="100,100">Once more, you hurry into the corner. As the smell hits you the second time, you feel as though you&#39;ve acclimated enough to find it not as dreadful the second time, though why you chose the same corner again, you didn&#39;t really think through. All that you can think about is that odour, once again consuming your senses.
+
+The footsteps soon pass by you with that distinctly hollow &lt;i&gt;clack&lt;/i&gt; sound. Then they stop.
+
+&quot;//Hiding in the corner again? You got something for animal funk? The last fella&#39; we had in here holed up in that spot too, doing, yah know.//&quot;
+
+You don&#39;t say anything at that.
+
+&quot;//A bit shy aren&#39;t yah?//&quot; the masculine voice lets out a strange sounding wheeze that perhaps was a laugh.
+
+It seems the jig is up. Turning around, you confront the speaker. The second you set eyes on them, you gasp, discovering that they are a tall, muscled horse standing upright, staring at you with confident, chocolate eyes.
+
+He has a shiny tan coat of fur over his bulky body. A long mane of white hair flows down his head, reaching down to rest on his shoulders. You notice that the only thing he&#39;s wearing is a worn leather belt around his waist, hanging off of which is a metal loop containing a single key. Poorly affixed to the front of the belt is a scrap of cloth, doing an equally poor job of covering the horse&#39;s genitals.
+
+
+* [[Demand freedom!-&gt;DemandFreedom]]
+* [[Ask questions, you have a lot.-&gt;AskQuestions]]
+
+(set: $mindmeter to $mindmeter + 6)</tw-passagedata><tw-passagedata pid="13" name="DoneQuestions" tags="" position="750,625" size="100,100">You get the sense that this guy isn&#39;t going to, or isn&#39;t capable of, providing very helpful answers.
+
+Regardless, you still need a way out of here.
+
+
+* No, this is too messed up, you are getting out of here. You [[demand it.-&gt;Demand]]
+* Perhaps you can [[reason with Brent-&gt;Reason]] and make some sort of compromise.</tw-passagedata><tw-passagedata pid="14" name="Demand" tags="" position="675,775" size="100,100">With a deep breath, you steel yourself and, puffing out your chest, glare right into those calm, hazel eyes.
+
+&quot;//You are going to release me. I won&#39;t let you keep me here,//&quot; you state in as menacing a tone as you can.
+
+&quot;//Feisty, aren&#39;t yah?//&quot; he says, crossing his arms. There&#39;s an edge to his statement that makes you uneasy. &quot;//Well, if you are so keen on release...//&quot; The edge is still in his voice as he pauses, stepping right up to your cell door and yanking the key from his belt. &quot;//I can give you release,//&quot; he finishes, unlocking the cell door.
+
+You get the sense that you should tread lightly and be prepared to face the consequences of whatever you choose to do.
+
+
+* Don&#39;t give him a chance to have a change of heart, [[make a run for it!-&gt;Bolt]]
+* Give him the benefit of the doubt and [[wait-&gt;HorseEnter]]. You doubt you could outrun him anyway.</tw-passagedata><tw-passagedata pid="15" name="Reason" tags="" position="825,775" size="100,100">There has to be a good way out of this. Though Brent is evidently not your average Joe, it doesn&#39;t mean he won&#39;t see reason, right?
+
+&quot;//Look, Brent, is there any way that I can convince you to let me go? It&#39;s obvious that you don&#39;t really enjoy being here,//&quot; you begin.
+
+Brent scratches down the length of his muzzle in thought. It doesn&#39;t take him long to come up with an answer.
+
+&quot;//Yah know what, fella&#39;? You&#39;re right, if you make it worth my while I&#39;ll let you go, I couldn&#39;t care less about that old geezer,//&quot; Brent walks up to the cell door, using the key to unlock it.
+
+Relief washes over you. Walking toward the door, you ask, &quot;//So what do you need? I don&#39;t really have money, or well, anything-//&quot; You&#39;re interrupted by Brent closing the cell door behind him after having entered himself.
+
+&quot;//Wait, what?//&quot; The relief from before turns icy cold, dropping down into a pit in your stomach.
+
+&quot;//You&#39;ll help out a buddy and he&#39;ll do the same for you, just like yah said.//&quot; Brent smiles an oddly genuine smile - right before tearing away the tattered cloth on his belt.
+
+The dark, sagging scrotum previously half-obscured now graces your vision full on, including the large, fleshy sheath of identical colouring above it, dangling slightly forward despite being attached to that chiseled abdomen.
+
+&quot;//Give me a good blow and yah can git outa here,//&quot; Brent states simply, hefting his crotch from the balls and jiggling it a bit, letting it all droop out in his hoofed hands. That of course doesn&#39;t help you in the slightest, as his big hands are unable to hold his entire package, emphasizing its sheer size. A flat tip peeks out from the depths of the sheath at the motion.
+
+&lt;ul&gt;
+(if:$mindmeter &lt; 11)[&lt;li&gt; [[NO.-&gt;Decline]]
+&lt;li&gt; [[Maybe...-&gt;BadAccept]] You don&#39;t really have a much of a choice at this point.](else:)[&lt;li&gt; [[No...-&gt;BadDecline]]] &lt;li&gt; [[Yes...-&gt;Accept]] Not what you were hoping for, but there&#39;s no reason to hate the inevitable... is there?&quot;
+&lt;/ul&gt;</tw-passagedata><tw-passagedata pid="16" name="Bolt" tags="" position="525,925" size="100,100">As soon as the door is open, every muscle in your body comes to life, sending you exploding toward the exit.
+
+In the blink of an eye, you zoom past the cell door, slamming hard into the near wall like arm outstretched to prevent your escape. The wind is thoroughly knocked out of you, leaving your chest sore, and any energy you had before, gone.
+
+Effortlessly, the horse carries your limp body back into the cell, not even bothering to close the open door behind him. It doesn&#39;t matter either way, because you definitely couldn&#39;t make a break for it now. Like a rag doll, he drops you to the ground, but you can&#39;t rise, still winded.
+
+But wait, why isn&#39;t he leaving?
+
+
+[[Uh oh.-&gt;AngryHorse]]</tw-passagedata><tw-passagedata pid="17" name="HorseEnter" tags="" position="675,925" size="100,100">Impatiently, you wait as Brent opens the old cell door with a creak... before stepping inside and closing it behind him.
+
+
+[[Hold on...-&gt;MiffedHorse]]</tw-passagedata><tw-passagedata pid="18" name="AngryHorse" tags="" position="525,1050" size="100,100">Brent clacks his teeth in irritation.
+
+&quot;//Pathetic lil&#39; fella&#39;, ain&#39;tcha? &#39;Specially that attitude of yours,//&quot; he mutters without humour. &quot;//You&#39;re missing some wits if you think you can pull a fast one on me.//&quot;
+
+You remain silent, due in part from the pain aching throughout your chest, and the other in humiliation.
+
+&quot;//You want release so bad? Well, what do you know?//&quot; He shoves his muzzle right into your face until the short beige hairs on his muzzle touch your nose and every hot, huffed breath hits your neck.
+
+&quot;&#39;&#39;//So do I.//&#39;&#39;&quot;
+
+(if:$gown is true)[With a //shrip//, Brent tears your gown off, evidently ripping it in the process. (set: $gown to false)]With seeming ease, he picks you up under the arms, roughly pulling you onto your knees. Too weak to comprehend his statement, let alone respond, you remain kneeling there, head bowed down in defeat.
+
+Suddenly his hands grasp onto the back of your head like a vice, smashing it into his groin. In seconds you&#39;re overwhelmed by Brent&#39;s potent odour as your face squishes against his fleshy sheath with his makeshift loincloth, which you discover is warm and //very// damp, sandwiched between. He shoves your head back and forth, almost as if trying to grind that smell into your cheek.
+
+At first you try not to breathe it in, but in no time you&#39;re gasp for breath, drawing in that scent deep into your lungs to the point where you don&#39;t think it&#39;ll ever leave.
+
+Not believing it can get any worse, you are proven horribly wrong when Brent tears the cloth off his belt and then begins to scrub your face with the inner side like some perverse washcloth. The sweat his crotch accumulated over who knows how long becomes your sweat, every desperate breath you draw tasting of sour saltiness.
+
+Brent gives you no break, as the cloth is abruptly replaced by his throbbing dick, jammed straight into your gasping mouth. It plunges down your throat, not giving you time to process what&#39;s happening. The hot flesh pumps in and out of your maw, assisted by the forceful hand at the back of your head.
+
+Numbly, while you&#39;re being face-pounded, you feel Brent continue wiping your body with that pre tainted, sweat soaked cloth for no discernible reason.
+
+It takes some time, but you eventually get the hang of breathing through your nose, even as horse dong pushes nearly down your throat. All you smell is Brent&#39;s dick, glistening from your saliva and the pre that sticks everywhere in your mouth.
+
+You&#39;re dizzy, in pain and struggling to breathe as Brent shoves that tainted fabric back up to your nose, ensuring all you smell is him and his intense musk for the foreseeable future.
+
+It occurs to you at some point just what Brent meant by release, but then he pulls out, strands of pre and saliva connecting your lips to that flared tip. Immediately, you&#39;re coughing, sucking in breaths of air. Somehow, everything feels stranger now that you aren&#39;t pinned up against his crotch.
+
+You have little time to contemplate before he hoists you up into the air and pins you against the wall with his rock hard body, equally hard cock pointed at your flaccid one. Using one hand to hold you against the wall, an impressive feat of strength, you note, he strokes his long length until his hand is slimy with the concoction you helped lube it with. He jams two hoofed fingers into your mouth, scraping along your tongue before coming out with your drool dripping down his fingers. At this point, everything tastes like horse pre.
+
+&quot;You didn&#39;t think I&#39;d forget about how much you wanted release too, did yah?&quot; he says mockingly. You don&#39;t understand until those fingers ram into your anus, pressing apart the ring of muscle as it becomes slick by your own secondhand doing. Brent goes at it, intent on loosening your hole. You know what&#39;s coming when his fingers retreat, theory being confirmed as that flat tip bumps into your backdoor, holding for one tense moment before penetrating into you.
+
+You let out a pained moan as Brent starts pushing in and out, getting used to your tight hole. Meanwhile, his free hand goes to your diminutive penis, pumping it in time with his own penetration.
+
+&quot;//How&#39;s it feel to ride a //real// horse, cowboy?//&quot; he whispers huskily into your ear with his chiselled chest pressed up against yours. The manly scent of pure stallion wafts into your already perverted senses and you can&#39;t help hardening under his grip and words combined.
+
+With every inch of cock pushed through your anus, his large hands glide over your dick, and somehow those sensations are melding together. Maybe it&#39;s the cloudiness in your addled mind, but the resistance in you starts to die out. You almost start enjoying the treatment.
+
+Your head flops onto Brent&#39;s broad shoulders, his white mane tickling your nose as the proximity to him allows his scent to tickle your mind.
+
+Soon his pace picks up, sending you flopping about, so much that you have to cling to him, grabbing onto those flexing muscles under the smooth, tan fur. It gets faster and faster, until you don&#39;t think you can handle it anymore.
+
+All at once, he shoves hard into you, getting about half his length in before he neighs, his whole body tensing. An explosion of heat fills your anal passage and you groan lewdly, firing off a small load onto your face.
+
+The cum keeps blasting into your rectum and soon you feel it leaking out, dripping down your butt cheeks. With your body incapable of holding all of Brent&#39;s orgasm, the pressure mounts until the horse releases your dick so that he can use both arms to hoist you off his own. The long mottled length continues to fire off strings of cum which splatter all over your body as it twitches in between each jet.
+
+
+[[Continue-&gt;AngryHorse2]]
+
+(set: $mindmeter to $mindmeter + 20)</tw-passagedata><tw-passagedata pid="19" name="AngryHorse2" tags="" position="525,1175" size="100,100">Finally, when Brent is done painting you white, he drops you to the ground, right into the puddle of spent semen. You shudder as the heat in your anus continues to seep up, extending throughout your body as images of Brent and his large equine dong fill your thoughts swirling around.
+
+&quot;//Hope you enjoyed your //release//, fella&#39;.//&quot; He grabs his cloth, wipes his dick off with it and then tosses it at your face. It misses, landing at your side.
+
+With that, Brent dismisses you, exiting and slamming the door shut. The sound of the lock turning back into place echoes in your mind as a goop of horse cum slides down from your hair.
+
+
+You spend a few moments resting, but even though the heat eventually dissipates, the smell clings to you, causing images of Brent to pop into your thoughts uninvited.
+
+There&#39;s one solution to that you can think of, as you eye the torn hospital gown. You won&#39;t be able to wear it again, so you could just use it to clean yourself off.
+
+&lt;ul&gt;
+&lt;li&gt;Use the gown to [[wipe off the sexual fluids-&gt;CleanupAngryHorse]].(if:$mindmeter &gt; 20)[&lt;li&gt; [[Lick clean.-&gt;LickCleanAngryHorse]] (Why would you do this?)]&lt;li&gt;[[Just wait.-&gt;Wait4]]
+&lt;/ul&gt;</tw-passagedata><tw-passagedata pid="20" name="MiffedHorse" tags="" position="675,1050" size="100,100">&quot;//Hold on, what are you doing?//&quot; you ask, uncertainty creeping up your spine as the distance between Brent and yourself closes.
+
+&quot;//Yah said you wanted release. I&#39;ll give you release. It just won&#39;t be yours,//&quot; Brent says with a dark smile. There&#39;s no time to get away before his arms slam against the cement wall on either side of your head.
+
+You gulp.
+
+
+* [[Fight back!-&gt;FightBack]]
+* [[Apologize.-&gt;Apologize]] Whatever he&#39;s talking about, surely there&#39;s some way to make up for it.</tw-passagedata><tw-passagedata pid="21" name="FightBack" tags="" position="675,1175" size="100,100">Looks like there&#39;s only one way out. Like a cornered animal, you abruptly lash out, adrenaline fueling your attack as you aim for the most vulnerable male anatomy.
+
+Unfortunately, Brent was more than ready, and excessively capable, of handling your attack. Your leg barely rises before Brent&#39;s strong hand slams into your chest, forcing you to the ground like a ton of bricks.
+
+With a loud thud that knocks the wind from you, you&#39;re sent sprawling onto the ground, Brent firmly holding down onto your chest. His eyes bore down at you like drills, having crushed your resistance before it could even start.
+
+
+[[Uh oh.-&gt;AngryHorse]]</tw-passagedata><tw-passagedata pid="22" name="Apologize" tags="" position="825,1050" size="100,100">&quot;//Look, Brent, I&#39;m sorry, I&#39;m just really confused and I don&#39;t know why I&#39;m locked in here,//&quot; you explain apologetically. &quot;//Can&#39;t you help me out? Please?//&quot;
+
+Brent gives you a hard look, before backing away.
+
+&quot;//Alright, fella&#39;. If you&#39;re so desperate to be released, then how&#39;s about a trade? I&#39;ll release you, if you give me release.//&quot;
+
+You look at him, confused. Then that dark smile pops up on his face again. In a smooth motion, Brent tears the makeshift loincloth off his belt, fully exposing his dark, sagging scrotum, above which above which his large, fleshy sheath of identical colouring dangles a bit forward, despite being attached to his toned abdomen.
+
+With both hands, he cradles the rotund orbs, pulling them up and jiggling them, causing the tip of his penis to poke out from its sheath. He gives his hips a subtle but sharp buck, and you feel something wet and warm hit your face.
+
+&quot;//Give me a good blow and yah can git outa here,//&quot; Brent states simply.
+
+&lt;ul&gt;
+(if:$mindmeter &lt; 11)[&lt;li&gt; [[NO.-&gt;Decline]]
+&lt;li&gt; [[Maybe...-&gt;BadAccept]] You don&#39;t really have a much of a choice at this point.](else:)[&lt;li&gt; [[No...-&gt;BadDecline]]] &lt;li&gt; [[Yes...-&gt;Accept]] Not what you were hoping for, but there&#39;s no reason to hate the inevitable... is there?&quot;
+&lt;/ul&gt;</tw-passagedata><tw-passagedata pid="23" name="Decline" tags="" position="775,1325" size="100,100">You stare, incredulous at the request. Not sparing another moment, you back away, shaking your head vigorously.
+
+&quot;//No. No way,//&quot; you say, stunned.
+
+Brent doesn&#39;t seem to take this to heart, and sighs with a shrug of his broad shoulders. Picking up the cloth from the ground, he heads out the door.
+
+&quot;//Eh, your loss,//&quot; he states, swiftly closing and locking the door behind him. &quot;//My job’s done anyway.//&quot;
+
+With that, he continues to the left, walking out of sight. Soon, the echoing &lt;i&gt;clops&lt;/i&gt; fade away.
+
+
+[[Wait.-&gt;Wait3]]</tw-passagedata><tw-passagedata pid="24" name="BadAccept" tags="" position="1025,1325" size="100,100">Apprehensively, you nod. You can&#39;t think of any other way to get out of here, and this might be your only chance to. Best to just do what he wants and get out of here.
+
+A large grin splits Brent&#39;s muzzle while his mottled cock emerges farther out. As he steps towards you, you spot a glint on the tip of that flared tip, the same one twinkling in his eyes. (if:$gown is true)[
+
+Once he reaches you, he grabs at your hospital gown, tearing it off before you can react.(set: $gown to false)]
+
+
+[[Continue-&gt;IffyHorseFun]]</tw-passagedata><tw-passagedata pid="25" name="BadDecline" tags="" position="900,1325" size="100,100">You gulp, staring at that slowly growing equine arousal. You know this is crazy... but it&#39;d be your only shot at escape, and it surely couldn&#39;t hurt. Still you cannot believe the request, and with uncertain steps, you move away until your back bumps into the cold cement wall behind you.
+
+&quot;//No...//&quot; you start, &quot;//I don&#39;t think - no way I&#39;d...//&quot; you mumble, still looking at it as the mottled flesh emerges farther, a little glint appearing in the middle of the tip, and, if you had been looking, Brent&#39;s eyes as well.
+
+He steps towards you, brawny body blocking your view, but you only stand there numbly, picking up on the equine odour exuding from Brent - specifically his nether region, not even realizing as your half-hearted head shaking slows and stops.
+(if:$gown is true)[
+That strong hand comes up to your chest, the hooves surprising you with their warmth.
+
+In a flash, Brent tears the gown off of your body.(set: $gown to false)]
+
+[[Continue-&gt;HorseFun]]</tw-passagedata><tw-passagedata pid="26" name="Accept" tags="" position="1150,1325" size="100,100">A blush blooms across your face as you consider his offer. It&#39;s not the worse thing he could have requested, you think.
+
+&quot;//Alright, fine,//&quot; you relent. Brent&#39;s smile widens.
+
+(if:$gown is true)[He steps up to you, pulling your hospital gown off and tossing it aside. (set: $gown to false)](else:)[You approach Brent as he motions to his awaiting arousal. ]Now that you&#39;re close enough, he juts his mottled length towards you. Warily, you extend your hands out, inspecting the equine dick. It has barely emerged from its sheath and already there&#39;s a bead of pre at the tip. The sheath is smooth and pliable, stretching as you knead it. Your hands wander farther down to the cusp of his slightly damp ballsack, surprised at how silky it feels.
+
+So close to Brent&#39;s dick, you quickly notice the sweaty, animal odour wafting from his crotch. Curious, you lean in, nostrils gingerly tugging at the scent of Brent&#39;s crotch, right where it is concentrated: the base of his sheath connecting to his scrotum. It&#39;s so manly and bestial that you can&#39;t help but lick at it, gathering the concentrated, sour saltiness into your mouth.
+
+You&#39;re suddenly aware of Brent&#39;s dick resting on your head, having nearly completely unsheathed.The bead of pre from before has turned to a trickle, sliding down his length. Despite your reservations, you know that you should do your best to please Brent, and you can&#39;t help but want to do it too.
+
+With one hand, you bring up one of Brent&#39;s large dangling orbs and begin sucking on it, polishing off the sheen of ball sweat. Your other hand reaches up, stroking Brent&#39;s immense length, spreading around the pre as it flows out more until his cock is slick and shiny. Brent huffs in approval.
+
+As your hand once more reaches the flared tip, you circle around the head with slow, deliberate motions while you move on to his other teste. Satisfied, you inhale that concentrated musk and lean back. Brent meets your gaze when you look up, and you&#39;re relieved, glad, to see him grinning.
+
+Starting from the base of his sheath, you lick up, drawing your tongue across his length until you get to his head, whereupon you open as wide as you can and take it into your mouth. You noticed the heat before, but now that it&#39;s in your mouth, his dick seems so hot thrumming against your lips.
+
+You start to bob, fitting what horse dong you can down your throat. It&#39;s a lot trickier than you imagine, nearly gagging more than once. Focusing hard on the feel of that hard horse cock in your maw and the scent of Brent, you manage to take your mind off your gag reflex.
+
+Meanwhile you let you hands roam, first along Brent&#39;s thick, powerful thighs, before trailing up to where the smooth fur fades into his crotch. Your hands weigh the drooping sack, surprised at their weight, you then use both hands to tug on his sheath, even sneaking it to feel the lubed up interior.
+
+Brent moans, unable to resist bucking a bit. This makes you feel oddly proud so you continue, suckling on the end of his cock while your tongue prods the end of the tip where the salty pre coats your tongue. You keep one hand fondling Brent&#39;s sheath as the other strokes his length, spending extra time squeezing the squishy ring of flesh in the middle.
+
+The horny horse starts to buck even harder so you double your efforts, going faster as the cock jerks around your mouth.
+
+Aiming for the final push, you force Brent&#39;s dick as far back as you can and your lips almost touch his medial ring. You see his balls suddenly tighten up and a quivering in your mouth right before Brent lets out a loud whinny. Viscous horse cum erupts into your mouth, rapidly bloating your cheeks and leaking out your imperfect seal.
+
+
+[[Continue-&gt;IffyHorseFun]]
+
+(set: $mindmeter to $mindmeter + 6)</tw-passagedata><tw-passagedata pid="27" name="CleanupAngryHorse" tags="" position="400,1325" size="100,100">Taking the torn hospital gown, you swiftly use it to wipe off your entire body, though the cum stuck in your hair seems there to stay, as does the seed that continues to drool out of your loose hole.
+
+Once you finish, the blue gown looks about similar to the cloth that Brent tossed at you. Actually, now that you consider this, you notice that the fabric is identical, just sown up double to be a bit thicker. You&#39;re not sure what to think of this revelation, so you push it from your mind.
+
+
+[[Wait more.-&gt;Wait5]]</tw-passagedata><tw-passagedata pid="28" name="LickCleanAngryHorse" tags="" position="525,1325" size="100,100">The idea starts off as a tiny whisper, but then it&#39;s all you can think of. You have no idea what compels you to do it, but you soon find your fingers in your mouth, slurping off the salty, animalistic cum from your fingers.
+
+Your hands sweep up the warm, gooey liquid from your body, and you gulp it all down, unintentionally fantasizing of Brent being with you, forcing that horse seed into your mouth. It&#39;s like you can still smell his brawny body in the cum pooled on your hands.
+
+Midway through licking at your palm, you eyes alight onto Brent&#39;s discarded loincloth. Like a moth to a flame, you find yourself picking it up and sweeping your tongue across the cum covered fabric, giving it a good whiff once you&#39;re done. Your loins stir as you do so, the faded scent of Brent&#39;s sweaty dick sparking in your mind. But at the same time, now that it isn&#39;t being shoved all over your face, you startle, noticing that it is the same fabric as the hospital gown, just sown up double to make it thicker.
+
+This snaps you back to your senses, unsettled at your discovery. You&#39;re basically clean anyway, so you stop in spite of some white stuff continuing to leak out of your butt. At the least the smell has lessened a bit.
+
+
+Nothing to do but [[wait-&gt;Wait5]].
+
+(set: $mindmeter to $mindmeter + 7)</tw-passagedata><tw-passagedata pid="29" name="Wait4" tags="" position="650,1325" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="30" name="Wait3" tags="" position="775,1450" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="31" name="HorseFun" tags="" position="900,1450" size="100,100">As he approaches, a strong odour encases you, (if:$mindmeter &gt; 5)[not unlike the one in your cell. However, this is fresh, and stronger, and it&#39;s not as bad, you think.](else:)[reminding you of the smell that pervades the entire cell, but this is fresher and stronger.] Noticing your nose twitching, Brent smirks.
+
+&quot;//So yah like that, eh?//&quot; You don&#39;t respond, instead staring at his erection which has now grown full mast, a tiny trickle of pre gilding its length.
+
+&quot;//I betcha&#39;d like to get a good whiff of a sexy horse like me, huh?//&quot; You want to shake your head, but nothing happens. Brent takes your silence as a resounding agreement and slides up next to you so that he can rest his length against your chest. Finally, your head begins to slowly shake from side to side, setting the world record for most delayed reaction.
+
+Your eyes remain glued to his horseflesh, now gently pressed up against you, feeling every thrum of Brent&#39;s heart. It radiates heat, inviting in its warmth. Brent then takes a hoofed finger, rubbing in circles on his tip where a small pool of pre has collected, letting it cling to his finger. To your shock, he then proceeds to bring it up to your mouth, sticky strands still connecting it to the end of his cock.
+
+For some reason, you don&#39;t do anything, letting him smear it across your lip and right under your nose. In no time at all, the salty tang of his pre fills your senses and your tongue snakes out, licking at the residue on your lips.
+
+&quot;//Hope yah enjoyed your taste test, but why stop there?//&quot; he says softly, turning to be right in front of you. Grinning lustily, he sways his hips slightly, setting his cock swinging like a perverse pendulum.
+
+No longer in control of yourself, you kneel down to get closer to the awing cock, nearly touching it with your nose as you take in Brent&#39;s horse musk.
+
+
+[[Continue-&gt;HorseFun2]]
+
+(set: $mindmeter to $mindmeter + 3)</tw-passagedata><tw-passagedata pid="32" name="HorseFun2" tags="" position="900,1575" size="100,100">In spite of being nude, you only feel hotter, kneeling prone before the muscled stallion. Too late you realize his cock passing through your lips, the taste of his pre lighting up your tongue. Your hands travel up, both grabbing ahold of that warm cock flesh.
+
+There&#39;s nothing for it now, with his flared tip inside your mouth, you realize that you can&#39;t say no to him. Hopefully, he&#39;ll come through with your promise; you&#39;ll just have to please him.
+
+
+* Maybe you can [[use your hands-&gt;IffyHorseFunHands]] more, instead of your mouth.
+* Focus on just [[blowing him.-&gt;IffyHorseFunMouth]]
+* [[Use both.-&gt;IffyHorseFunBoth]] Try to give his balls some attention while also putting in more effort.</tw-passagedata><tw-passagedata pid="33" name="IffyHorseFunHands" tags="" position="975,1725" size="100,100">Not so certain about your abilities with your mouth, you instead move both hands back to feel those warm orbs that sag down his thighs. Seeing your lack of oral participation, Brent begins thrusting a bit himself. The motion causes his testicles to sway pendulously, testifying to their density.
+
+Grasping one in each hand you feel that silky texture of his scrotum, massaging it tenderly. You bounce them in your hands, getting a sense of its surprising weight, indicating how pent up Brent is. It&#39;s hard not to notice just how large they are as well, dangling so far down.
+
+Satisfied with your exploration, you let one hand trail up the taut, dark flesh, rubbing at the smooth part right behind the balls where the scrotum meets the taint. Meanwhile your other hand goes up the other way, touching the base of the sheath. Since he&#39;s fully erect, your hand has easy access to feel up the edge of his sheath, marvelling at the soft, pliable flesh.
+
+Curiously, you press up against the base of that, hot, thick cock still passing in and out of your mouth, and dig into his sheath, finding the inside to be slick and wet. Brent groans above you as you explore his sheath. A voice at the back of your head wonders what it&#39;d be like to have your own.
+
+Your other hand, which had been rubbing against Brent&#39;s backsack, advances farther away, trailing along the taint. This goes on longer than you expect until you remember that the person mating with your face is in fact a horse. With your forearm sandwiched between Brent&#39;s toned butt cheeks, you soon encounter the squishy, protruding flesh of his backdoor. You make quick rings around the entrance, occasionally feeling his tail flick up against your hand.
+
+Seemingly no longer in control of your own actions, you push into Brent&#39;s anus, first with your index, then middle finger together. Brent neighs in surprise, but with your right hand, you tug on his sheath, squeezing it around his cock.
+
+Your fingering gains speed as you stretch out his puckered anus, while reaching his most sensitive spots within his equine sheath.
+
+By that point your mouth is full of his salty pre, and you are forced to swallow. This turns out to be a very wise decision, as suddenly, his anus tenses around your fingers, and before you realize it, bouts of cum are blasting into your mouth.(set: $mindmeter to $mindmeter + 1)
+
+
+* Attempt to [[swallow it all-&gt;Swallow]].
+* [[Pull back-&gt;PullBack]] because you&#39;d rather to not drown.</tw-passagedata><tw-passagedata pid="34" name="IffyHorseFunMouth" tags="" position="1100,1725" size="100,100">Compliantly, you try widening your mouth even more, focusing on suppressing your gag reflex as more horse dong slips past your lips. As you reach your limit, you back off, lips pouting out as they slide back along the flesh, leaving it shiny from your natural spittle lube.
+
+Once the bumpy, flared tip exits your mouth, strands of saliva still clinging to the it, you stick out your tongue, dragging it across the flat head. The fountaining pre collects all over your tongue, and Brent shivers as you lather his tip. Taking it back in your mouth, you let your tongue explore the animalistic head, tracing the circular head before pressing the muscle into the centre, letting the taste of Brent&#39;s salty precum fill your mouth. With that thought, you swallow it down.
+
+Simultaneously, your hands have ventured out on their own, feeling along the mottled length, inspecting the medial ring almost of their own accord.It is evidently quite sensitive, as Brent lets out a quiet neigh just from your contact.
+
+Pushing your limits to the max, you surprise yourself with the amount of dick you get into your mouth, and taking Brent&#39;s cue, swiftly pump your hands over that squishy ring of flesh. Brent&#39;s breathing starts to come in quick bursts so you start suckling on the tip, as if you were drinking from some oversized straw.
+
+The pressure around his tip and the rapid assault of his sensitive ring seem to be his tipping point as a spurt of pre down your throat and a quivering in the long organ precede the eruption of cum down your gullet.(set: $mindmeter to $mindmeter + 3)
+
+
+* Attempt to [[swallow it all-&gt;Swallow]].
+* [[Pull back-&gt;PullBack]] because you&#39;d rather to not drown.</tw-passagedata><tw-passagedata pid="35" name="IffyHorseFunBoth" tags="" position="850,1725" size="100,100">With your left hand, you release Brent&#39;s phallus, reaching back to grab ahold of his startingly dense teste. The dark flesh is even smoother than the cock in your mouth and you spend a bit just feeling its heft and rolling around your fingers.
+
+Meanwhile, you close your eyes and focus, letting more of the horse dong pass into your mouth. A puddle of pre had been pooling on your tongue since you started, and nervously you swallow it, feeling the warmth glide down your throat. Your tongue sneaks up, pressing into the centre of that pre fountain, licking around the tip. As you do this, you really taste Brent; his animalistic musk mixing with the salty tang.
+
+By now, your hand has started kneading the large teste, rubbing carefully over its surface.
+
+Thinking on it, you begin sucking, as if Brent&#39;s cock was so over-sized straw, which in some respect, it is. It&#39;s sloppy, but you think you&#39;re making progress if the subtle grunts and groans the horse has been making mean anything.
+
+In no time at all, all your senses are consumed by Brent: all you see is that appreciable shaft charging into your mouth, the bush of fur at the base, where his abs stand pronounced, all you hear is your wet squelching, trying not to choke on him, all you smell and taste is the potent, heady aroma of horse dick, all you feel is the pulsing flesh in your hand and mouth and that heavy round orb.(set: $mindmeter to $mindmeter + 4)
+
+
+[[Continue-&gt;IffyHorseFunBoth2]]</tw-passagedata><tw-passagedata pid="36" name="IffyHorseFun" tags="" position="1100,1450" size="100,100">With your chest bare, Brent moves forward, tall enough that he can gently press the tip against your sternum. The hot flesh flattens out against your skin, feeling so smooth and slimy. He rotates his hips a bit, smearing precum around your chest. When he finally pulls back you shiver, tense.
+
+There&#39;s a pause which is only broken when you hear Brent give out a grunt. You uncomfortably meet his eyes. Clearly impatient himself, he tilts his head downward.
+
+Defeated, you kneel down before his rapidly rising tower of flesh, the cooling liquid on your chest amplifying the chills that race through your body in your prone position. Fear flits about your head, clouding under the equine smell exuding from Brent&#39;s groin, assaulting your nostrils.
+
+
+[[Continue-&gt;IffyHorseFun2]]
+
+(set: $mindmeter to $mindmeter +1)</tw-passagedata><tw-passagedata pid="37" name="IffyHorseFun2" tags="" position="1100,1575" size="100,100">Before the erection can get any longer, you reach out uncertainly, gingerly taking the pillar of hot cock flesh into your hands. One hand encircles barely eighty percent of its girth, and  already the arousal is enough to strain away from your feeble grasp.
+
+A drop of pre rolls down the length as you pull it down, dripping down onto your right hand, reminding you once again of what you&#39;ve gotten yourself into.
+
+You eventually find the strength to point the end right at your face. The large, flared tip oozes more pre, creating a warm stream that runs down your arm. Kneeling down before him, you feel dwarfed.
+
+You give Brent a silent, pleading look, which he happily ignores. With nothing to do but return your attention to the matter in hand, you reluctantly open your mouth.
+
+The second you do, Brent shoves forward, driving the head into your mouth. Instinctively, you resist before he sends it hurtling down your throat. Meekly, you move back and forth, letting about an inch of the penis enter and exit your taut lips.
+
+Brent is unsurprisingly disappointed, settling on trying to push in himself.
+
+&quot;//My hand can do better than that. Mind being more than a wet hole?//&quot; he grumbles.
+
+
+* [[Nah.-&gt;IffyHorseFun3]] This is more than enough on your part.
+* You eye his balls and [[clench your fist.-&gt;KnockOut]] You&#39;re quite close to those family jewels, but would you dare?
+* Maybe you can [[use your hands-&gt;IffyHorseFunHands]] instead of your mouth.
+* [[Better give him what he wants.-&gt;IffyHorseFunMouth]]
+* [[Use both your hands and mouth-&gt;IffyHorseFunBoth]] by giving his balls some attention while putting in more effort so you can get this over with, &lt;i&gt;fast&lt;/i&gt;.</tw-passagedata><tw-passagedata pid="38" name="IffyHorseFun3" tags="" position="1225,1725" size="100,100">Not even bothering to answer, you remain silent.
+
+Once it becomes clear to Brent that you aren&#39;t going to cooperate, he starts acting on his own, using a bit more force to push into your restrictive maw.
+
+Suddenly, firm hands grip your skull, preventing you from moving. The hot, equine shaft soon pumps into you with increased vigour, and try as you might, you can&#39;t stop it from nearly prodding the back of your throat.
+
+Frantic, as you find it increasingly difficult to breathe, you try and cry out, but instead your words just vibrate against Brent&#39;s cock and he neighs quietly in pleasure.
+
+For far too long, Brent takes his statement literally, using you as nothing more than a hole, keeping your lips held around the now slick flesh, lubed by your saliva. All you can smell is horse, Brent&#39;s musk, and all you can taste is the slightly slimy salty tang of his precum.
+
+Then, mid-thrust, Brent stops. At first, you&#39;re not sure why, looking up at him, but then his cock quivers, right before jets of semen erupts out the flared head, filling your mouth in a second. Brent doesn&#39;t pull back, though, and you can&#39;t do it either. His hands are like locks, freezing your head in place.
+
+With no other choice, you swallow, desperately trying to free your mouth, but the sheer girth and amount of effluent makes this impossible. Again and again you gulp, feeling that hot goop glide down into your stomach, rapidly distending it.
+
+When you think you can take it no more, Brent jerks back, freeing his shaft. Immediately, you fall to the ground, more than slightly dizzy and weak, coughing up his seed, which is now all over your face and sliding down your chest. Brent grins and kneels next to you, balls almost reaching the cement floor. He grabs his now flopped length, and smears the remnants across your face, painting it white. An unnecessary amount of time is spent wiping it across your nostrils, ensuring that the only thing you&#39;ll be smelling or tasting for at least the next hour is Brent&#39;s musky sex.
+
+&quot;//Now that was fun, wasn&#39;t it?//&quot; Brent jokes to your chagrin. He picks up the hospital gown, using it to wipe himself off as he heads to the door. When he exits and shuts it behind him, panic flares up within you like a wildfire during dry season.
+
+&quot;//Wait! You said you&#39;d free me!//&quot; you cry out, alarmed. Brent locks the door and gives you an easy going smile.
+
+&quot;//I said I&#39;d free yah if you showed me a good time, and lemme tell you fella&#39;, that was pretty bad.//&quot; With a wink he dismisses you, walking off as you stare, stunned.
+
+More in shock than you could be upset, you lay on the cold floor, next to the puddles of spunk. They, however, are nothing compared to the amount that you feel sloshing within you. It fills you with a feverish heat that creeps up into your brain, making your head ache a bit.
+
+
+There&#39;s nothing you can do now but [[wait-&gt;Wait6]].
+
+(set: $mindmeter to $mindmeter + 15)</tw-passagedata><tw-passagedata pid="39" name="KnockOut" tags="" position="1350,1725" size="100,100">There&#39;s an opportunity and you&#39;re taking it.
+
+With more than a bit of guilt, you wince, abruptly bringing up your fist squarely against those two prone, low hanging orbs.
+
+The effect is immediate. Brent lets out a loud, alarmed whinny, flying backward as if struck by a train. Shamefully, you try not to think of his pain as he collapses to his knees, hands shoved below his navel.
+
+You spit the taste of him from your tongue as you consider your options before he recovers.(set: $mindmeter to $mindmeter - 2)(set: $gown to false)
+
+&lt;ul&gt;
+&lt;li&gt; [[Snatch the key and get out of there.-&gt;KeysGo]]
+|bindOption&gt;[&lt;li&gt; Use what you can to [[bind and gag the horse-&gt;BindGag]] first.](if:$gown is false)
+[|regown&gt;[&lt;li&gt; (link:&quot;Put your gown back on.&quot;)[You hastily grab your hospital gown and pull it back on.(replace: ?regown)[](replace: ?bindOption)[&lt;li&gt; Use what you can to [[bind and gag the horse-&gt;BindGagFail]] first.]]]]
+&lt;/ul&gt;</tw-passagedata><tw-passagedata pid="40" name="Wait6" tags="" position="1225,1850" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="41" name="Swallow" tags="" position="975,1900" size="100,100">Immediately, you begin gulping down as much of it as you can, marvelling at the gooey heat it leaves as it drops down into your stomach. There was no way you could keep up with Brent&#39;s output, so in no time, you&#39;re forced off his cock to breathe, the last few spurts splattering onto your face and chest.
+
+With a furious blush, you notice that at some point, you got a little excited yourself, as is evidenced from your manhood, now splattered with Brent&#39;s seed.
+
+Brent sees it too and brings his large hoofed hand down, stroking at your erection, spreading that sticky goop all over your diminutive length, when compared to even just his hand.
+
+This lasts for a second before Brent pats you on the head, mussing it a bit. You cringe at the fluid now stuck in your hair.
+
+&quot;//That was a good ride, buddy,//&quot; he says blissfully. &quot;I think you&#39;ve earned your way outta here,&quot; he grabs his makeshift loincloth from the ground and heads over to the door, opening it.
+
+&quot;//Wish I could keep yah. Oh well, whatcha do from here I don&#39;t mind. Thanks for the good time cowboy,//&quot; he winks at you before trotting off with a little spring in his step.(set: $mindmeter to $mindmeter + 10)
+
+
+* [[Leave the cell.-&gt;LeaveHorseFun]]
+* There&#39;s no way you can go on covered in spunk. [[Clean yourself first-&gt;CleanupHorseFun]].(if:$gown is false and $mindmeter &lt; 20)[
+* (link:&quot;Put your gown back on&quot;)[(set: $gown to true)], ignoring the spunk all over you.](else:)[
+* [[Go after him.-&gt;GoAfter]] Perhaps he can help you lead you to an exit. He seems like a decent guy.]</tw-passagedata><tw-passagedata pid="42" name="PullBack" tags="" position="850,1900" size="100,100">As the torrent of cum floods your mouth, you know there&#39;s no possible way that you can keep up with it.
+
+Pulling back, you barely sputter out the fluid in your mouth before jets of semen continue flying all over your face and down your chest, absolutely soaking you in it. The last few spurts land square on your groin, which you notice had become aroused itself sometime during your affair. A hot blush brightens your face.
+
+Brent catches sight of your condition and grins. Bringing his large hoofed hand down, he sweeps along your core, collecting up a handful of jism and sweeps it over your length, dwarfed just from the size of his hand. The hot goop oozes down and around your length, making you shiver with unintentional pleasure.
+
+Afterward, he pats your head with a &lt;i&gt;squish&lt;/i&gt; from the cum soaked in your hair and you wince.
+
+&quot;//That was a good ride, buddy,//&quot; he says blissfully. &quot;//I think you&#39;ve earned your way outta here.//&quot; He grabs his makeshift loincloth from the ground and heads over to the door, opening it.
+
+&quot;//Wish I could keep yah. Oh well, whatcha do from here I don&#39;t mind. Thanks for the good time, cowboy.//&quot; He winks at you before trotting off with a little spring in his step.(set: $mindmeter to $mindmeter + 7)
+
+
+* [[Leave the cell.-&gt;LeaveHorseFun]]
+* There&#39;s no way you can go on covered in spunk. [[Clean yourself first-&gt;CleanupHorseFun]].(if:$gown is false and $mindmeter &lt; 20)[
+* (link:&quot;Put your gown back on&quot;)[(set: $gown to true)], ignoring the spunk all over you.](else:)[
+* [[Go after him.-&gt;GoAfter]] Perhaps he can help you lead you to an exit. He seems like a decent guy.]</tw-passagedata><tw-passagedata pid="43" name="IffyHorseFunBoth2" tags="" position="725,1800" size="100,100">At some point, your right hand had begun to stroke Brent&#39;s length, exploring the relatively squishy ring of flesh compared to the rigid cock in your mouth. This seems to be the final touch, as Brent&#39;s previous, slow, subtle thrusts start to come a bit jerky.
+
+In the middle of one of your hefts, you feel the teste tighten up; it&#39;s your only warning before a flood of cum blasts into your maw. As a result of your poor seal, it comes pouring out the edges of your mouth.
+
+
+* Attempt to [[swallow it all-&gt;Swallow]].
+* [[Pull back-&gt;PullBack]] because you&#39;d rather to not drown.</tw-passagedata><tw-passagedata pid="44" name="Leave" tags="" position="1475,2025" size="100,100">Keeping an eye on Brent, you pick up the key loop and leave the cell, closing and locking the creaky door behind you. You sigh with relief.
+
+You&#39;ve escaped your cell.
+
+[[Continue-&gt;OutsideCell]]
+
+(set: $cellKey to true)</tw-passagedata><tw-passagedata pid="45" name="CleanupHorseFun" tags="" position="975,2075" size="100,100">With all the horse semen on you, all you can smell is the strong scent of animal sex and it makes your head spin.
+
+Making do with nothing, you wipe the white goo off yourself despite its attempts to stick to you. You quickly realize that you won&#39;t get much out of your hair, however, so you give up trying and focus on cleaning your body.
+
+After a few minutes of diligent wiping, the ratio of cum splattered around the concrete floor below you and the cum still on you has reached acceptable levels, though you are still covered in a musky sheen.(set:$gown to false)
+(set: $mindmeter to 15)(if:$gown is false)[(if:$mindmeter &lt; 20)[
+You could (link-reveal:&quot;put your gown back on&quot;)[(t8n:&quot;dissolve&quot;)(show: ?regown)].]](hidden:)|regown&gt;[
+You retrieve the discarded hospital gown and put it back on.(set: $gown to true)]
+(if:$mindmeter &gt; 10)[&lt;ul&gt;
+&lt;li&gt; You could [[lick yourself clean-&gt;LickCleanHorseFun]]... at the least, it should work...
+&lt;li&gt;[[LeaveCleaned]]&lt;/ul&gt;]
+(else:)[[LeaveCleaned]]
+
+</tw-passagedata><tw-passagedata pid="46" name="GoAfter" tags="" position="700,2075" size="100,100">Something springs you to your feet and before you realize what you&#39;re doing, you&#39;ve dashed out the cell.
+
+&quot;//Brent! Wait!//&quot; you call out to his retreating back. Luckily, he pauses and turns around, a curious look on his face. Now that you&#39;ve gotten his attention, you have no choice but to follow through. Suddenly a bit flustered, you ask, &quot;//Can I come with you?//&quot;
+
+Blank brown eyes stare back at you.
+
+&quot;//I mean, you probably know where the exit is, so I was wondering if you could take me with you. To the exit.//&quot; For some reason, you&#39;re getting real anxious, feeling a bit vulnerable but you don&#39;t know why. A smirk stretches that long equine muzzle as Brent beckons you to join him.
+
+&quot;//Sure, fella&#39;, you can tag along,//&quot; he replies amicably.
+
+
+[[Continue-&gt;GoAfter2]]</tw-passagedata><tw-passagedata pid="47" name="KeysGo" tags="" position="1350,1900" size="100,100">Not giving Brent any more time to recover, you quickly remove the key loop from his belt, all while he groans in pain.
+
+In just a second, you&#39;ve dashed out of the cell, locking the door as you slam it shut behind you. You wince at the echoing sound, but sigh in relief.
+
+You&#39;ve escaped your cell.
+
+
+[[Continue-&gt;OutsideCell]]
+
+(set: $cellKey to true)
+(set: $brentJailed to true)</tw-passagedata><tw-passagedata pid="48" name="BindGag" tags="" position="1475,1900" size="100,100">Wasting no time, you quickly undo the belt around Brent&#39;s waist, tossing the key ring aside. Though he seems to put up resistance, all you get from Brent are a few mumbles of, &quot;//it hurts.//&quot;
+
+Fortunately for you, not only did Brent stumble all the way to the metal bars, but his belt is pretty long. Prying his heavy, limp arms away from his front to around his back, you hastily wrap the belt around them as tight as you can, winding around his wrists and then the sturdy rusted bars. For what you lack in strength, you feel you&#39;ve more than made up with adrenaline as Brent&#39;s motions start regaining force.
+
+Once the belt is secure, you grab the discarded cloth, nearly dropping it the first time on account of its unexpectedly unpleasant warmth and dampness. Balling it up, you find it isn&#39;t quite large enough, so you scrap some hay from the ground, wrapping the cloth around it.
+
+&quot;//Why&#39;d yah -//&quot; Brent starts to grumble, but you take the moment to shove the thing into his mouth. He looks surprised and then, having mostly recovered, yanks back and forth, trying to escape his bonds. Miraculously, the belt holds, for now.
+
+(if:$gown is true and $mindmeter &lt; 10)[You could (link-reveal:&quot;get your gown back&quot;)[(t8n:&quot;dissolve&quot;)(show: ?regown)].
+(hidden:)|regown&gt;[You grab your hospital gown where Brent tossed it and pull it back on. Meanwhile, Brent just glares at you.(set: $gown to true)]]
+
+
+[[Leave]] 
+
+(set: $brentBound to true)</tw-passagedata><tw-passagedata pid="49" name="BindGagFail" tags="" position="1600,1900" size="100,100">Returning to Brent, you see that he is now on his hands and knees, still wheezing. Quickly, you undo the belt around his waist, tossing the key ring aside.
+
+You reach out to grab at his arms, belt ready in hand, but the second you make contact with his thick forearm, he pulls away, turning the tables as his firm grip cinches around your arm.
+
+&quot;//You play dirty, huh? I got just the place for a //fella&#39;// like you.//&quot; Fear freezes you in place as Brent&#39;s hoofed fist collides with your head.
+
+
+[[Continue-&gt;Awaken]]</tw-passagedata><tw-passagedata pid="50" name="LickCleanHorseFun" tags="" position="1100,2075" size="100,100">An idea pops in your head, one that you blush just for thinking of, but it lingers there as an entirely plausible alternative.
+
+Gingerly, you turn your head over to your right shoulder, blinking as some cum drips off your hair and down your eyes. What the heck. (if:$gown is true)[You shift the gown out of the way before y](else:)[Y]ou poke your tongue out and begin licking up the remaining cum on your shoulders, moving down the length of your arm before lapping at the build up on your hand, not even noticing as you suck each finger clean, guiltily breathing in Brent&#39;s equine musk.
+
+In no time at all, you&#39;ve licked up wherever you can(if:$gown is true)[ that the gown isn&#39;t covering], noting pleasantly that it actually sort of worked, rather than focusing on the tingle you got from cleaning up Brent&#39;s cum with your tongue.
+
+(if:$gown is false and $mindmeter &lt; 20)[You could (link-reveal:&quot;put your gown back on&quot;)[(t8n:&quot;dissolve&quot;)(show: ?regown)].]
+(hidden:)|regown&gt;[You retrieve the discarded hospital gown and put it back on.(set: $gown to true)]
+
+[[LeaveCleaned]]
+
+(set: $mindmeter to $mindmeter + 5)</tw-passagedata><tw-passagedata pid="51" name="LeaveCleaned" tags="" position="1050,2200" size="100,100">With that over with, you stride past those rusted metal bars with a sigh of relief.
+
+You&#39;ve escaped your cell.
+
+
+[[Continue-&gt;OutsideCell]]</tw-passagedata><tw-passagedata pid="52" name="Wait5" tags="" position="450,1450" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="53" name="Awaken" tags="" position="1600,2050" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="54" name="OutsideCell" tags="" position="1075,2350" size="100,100">You are in the hallway, just in front of your cell. There&#39;s no distinguishable difference between the hallway extending to your left and right.(if:$brentBound is true)[
+
+Brent is tied to the cell door here, occasionally struggling against his bounds while glaring at you.](else-if: $brentJailed is true)[
+
+Brent is standing stiffly inside the cell, arms crossed, glaring at you, but he astonishingly doesn&#39;t say a word. It&#39;s unnerving.]
+
+</tw-passagedata><tw-passagedata pid="55" name="LeaveHorseFun" tags="" position="850,2075" size="100,100">Who cares what you&#39;re covered in? You can sort it all out when you get out. Without another second spared, you step out the cell, watching as Brent turns a corner to your left. The last you see of him is his swinging tail.
+
+You&#39;ve escaped your cell.
+
+
+[[Continue-&gt;OutsideCell]]</tw-passagedata><tw-passagedata pid="56" name="GoAfter2" tags="" position="575,2075" size="100,100">Nodding your thanks, you catch up to him, &lt;b&gt;arriving at a temp end!&lt;/b&gt;
+
+[[Play Again!-&gt;Beginning]]</tw-passagedata></tw-storydata>
 <script title="Twine engine code" data-main="harlowe">"use strict";var _slicedToArray=function(){return function(e,t){if(Array.isArray(e))return e;if(Symbol.iterator in Object(e))return function(e,t){var n=[],r=!0,i=!1,a=void 0;try{for(var o,s=e[Symbol.iterator]();!(r=(o=s.next()).done)&&(n.push(o.value),!t||n.length!==t);r=!0);}catch(e){i=!0,a=e}finally{try{!r&&s.return&&s.return()}finally{if(i)throw a}}return n}(e,t);throw new TypeError("Invalid attempt to destructure non-iterable instance")}}(),_typeof="function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function(e){return typeof e}:function(e){return e&&"function"==typeof Symbol&&e.constructor===Symbol&&e!==Symbol.prototype?"symbol":typeof e};function _defineProperty(e,t,n){return t in e?Object.defineProperty(e,t,{value:n,enumerable:!0,configurable:!0,writable:!0}):e[t]=n,e}function _toConsumableArray(e){if(Array.isArray(e)){for(var t=0,n=Array(e.length);t<e.length;t++)n[t]=e[t];return n}return Array.from(e)}!function(){
 /**
  * @license almond 0.3.3 Copyright jQuery Foundation and other contributors.
