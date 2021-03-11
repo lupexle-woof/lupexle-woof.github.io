@@ -9,13 +9,17 @@
 </head>
 <body>
 <tw-story><noscript><tw-noscript>JavaScript needs to be enabled to play The Prison.</tw-noscript></noscript></tw-story>
-<tw-storydata name="The Prison" startnode="1" creator="Twine" creator-version="2.3.13" ifid="9F2F6945-72EC-4333-8E62-23F2577AFCAC" zoom="1" format="Harlowe" format-version="3.2.1" options="" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css"></style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-passagedata pid="1" name="Beginning" tags="" position="675,50" size="100,100">&lt;h1 style=&quot;font-family:impact;font-size:140%;text-align:center;&quot;&gt;THE PRISON&lt;/h1&gt;
+<tw-storydata name="The Prison" startnode="1" creator="Twine" creator-version="2.3.13" ifid="9F2F6945-72EC-4333-8E62-23F2577AFCAC" zoom="0.6" format="Harlowe" format-version="3.2.1" options="" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css"></style><script role="script" id="twine-user-script" type="text/twine-javascript">// Set icon
+var favicon  = document.createElement("link");
+favicon.rel  = "shortcut icon";
+favicon.href = "favicon.ico";
+document.head.appendChild(favicon);</script><tw-passagedata pid="1" name="Beginning" tags="" position="675,50" size="100,100">&lt;h1 style=&quot;font-family:impact;font-size:140%;text-align:center;&quot;&gt;THE PRISON&lt;/h1&gt;
 
 You&#39;re an ordinary guy doing ordinary things, when you are somehow captured. Trapped inside of a mysterious prison, you must find your way out - before succumbing to whatever &#39;dangers&#39; lurk within.
 
 &lt;i&gt;Can you escape The Prison or will you end up being a part of whatever nefarious plans await?&lt;/i&gt;
 
-&lt;b&gt;(text-colour:#f00)[Disclaimer: This game contains naughty stuff so if you are not of the legal age to view adult content, do not proceed.]&lt;/b&gt;
+&lt;b&gt;(text-colour:#f00)[Disclaimer: This game contains sexual content and furry fetishes, so if you are not of the legal age to view adult content, do not proceed.]&lt;/b&gt;
 
 &lt;p style=&quot;text-align:center;&quot;&gt;&lt;b&gt;[[Click to Begin-&gt;Begin]]&lt;/b&gt;&lt;/p&gt;
 &lt;p style=&quot;text-align:right;&quot;&gt;&lt;small&gt;Version 2.1: Cat n&#39; Doge&lt;/small&gt;&lt;/p&gt;</tw-passagedata><tw-passagedata pid="2" name="Begin" tags="" position="675,175" size="100,100">You groan. Where are you? What happened?
@@ -30,13 +34,7 @@ You hear footsteps outside approaching your cell.
 
 
 * [[Attempt to hide-&gt;Hide]] from the approaching person.
-* [[Go find out who&#39;s approaching-&gt;HorseApproach]]. Maybe they have answers.
-
-(set: $mindmeter to 0)
-(set: $gown to true)
-(set: $brentBound to false)
-(set: $cellKey to false)
-(set: $brentJailed to false)</tw-passagedata><tw-passagedata pid="3" name="Hide" tags="" position="375,225" size="100,100">Anxious, you back away, frantically looking for some place to hide away, but there&#39;s nowhere to hide!
+* [[Go find out who&#39;s approaching-&gt;HorseApproach]]. Maybe they have answers.</tw-passagedata><tw-passagedata pid="3" name="Hide" tags="" position="375,225" size="100,100">Anxious, you back away, frantically looking for some place to hide away, but there&#39;s nowhere to hide!
 
 With the footsteps fast approaching, you dash over and huddle near the back corner of the cell.
 
@@ -54,8 +52,9 @@ Around its waist, it is wearing a leather belt where a metal loop with a single 
 
 &quot;//Well, well. Hey there little fella&#39;,//&quot; the horse says with a grin on his long muzzle. He tosses his mane back and flicks his tail as he approaches. &quot;//Nice to be awake isn&#39;t it?//&quot;
 
-[[Demand freedom!-&gt;DemandFreedom]]
-[[Ask questions, you have a lot.-&gt;AskQuestions]]</tw-passagedata><tw-passagedata pid="5" name="BackOff" tags="" position="475,350" size="100,100">This is impossible. The fire in your lungs overtakes you and instinctively stumble back, hacking and coughing, trying to forcibly remove the smell from your nose and mouth. You can even still taste it.
+
+* [[Demand freedom!-&gt;DemandFreedom]]
+* [[Ask questions, you have a lot.-&gt;AskQuestions]]</tw-passagedata><tw-passagedata pid="5" name="BackOff" tags="" position="475,350" size="100,100">This is impossible. The fire in your lungs overtakes you and instinctively stumble back, hacking and coughing, trying to forcibly remove the smell from your nose and mouth. You can even still taste it.
 
 It takes a few moments for you to recover, so it&#39;s no surprise that when you do, there are no more footsteps. Nervously, you turn around.
 
@@ -81,9 +80,9 @@ Now that they&#39;re gone, you have some time to figure out what to do. Hopefull
 
 
 * [[Wait.-&gt;Wait]]
-* [[Look out.-&gt;LookOut]]
+* [[Look out.-&gt;LookOut]]{
 
-(set: $mindmeter to $mindmeter + 4)</tw-passagedata><tw-passagedata pid="7" name="Wait" tags="" position="350,475" size="100,100">With the immediate threat gone, you decide to wait.
+(set: $mindmeter to $mindmeter + 4)}</tw-passagedata><tw-passagedata pid="7" name="Wait" tags="" position="350,475" size="100,100">With the immediate threat gone, you decide to wait.
 
 Perhaps if you bide your time, an opportunity to escape will present itself, at least, you hope.
 
@@ -97,6 +96,7 @@ You doff the garment, tossing it to the ground next to the hay. A shiver immedia
 Antiquated electric lights keep the hallway surprisingly well lit.
 
 There&#39;s nothing distinguishable about it either. Unfortunately, it doesn&#39;t seem like you can do much.
+
 
 There&#39;s not much of a choice but to just [[wait now.-&gt;Wait]]</tw-passagedata><tw-passagedata pid="9" name="DemandFreedom" tags="" position="600,475" size="100,100">Recovering from your shock, a desperate lividness wells up within you.
 
@@ -195,8 +195,7 @@ The dark, sagging scrotum previously half-obscured now graces your vision full o
 
 &lt;ul&gt;
 (if:$mindmeter &lt; 11)[&lt;li&gt; [[NO.-&gt;Decline]]
-&lt;li&gt; [[Maybe...-&gt;BadAccept]] You don&#39;t really have a much of a choice at this point.](else:)[&lt;li&gt; [[No...-&gt;BadDecline]]] &lt;li&gt; [[Yes...-&gt;Accept]] Not what you were hoping for, but there&#39;s no reason to hate the inevitable... is there?&quot;
-&lt;/ul&gt;</tw-passagedata><tw-passagedata pid="16" name="Bolt" tags="" position="525,925" size="100,100">As soon as the door is open, every muscle in your body comes to life, sending you exploding toward the exit.
+&lt;li&gt; [[Maybe...-&gt;BadAccept]] You don&#39;t really have a much of a choice at this point.](else:)[&lt;li&gt; [[No...-&gt;BadDecline]]] &lt;li&gt; [[Yes...-&gt;Accept]] Not what you were hoping for, but there&#39;s no reason to hate the inevitable... is there?&lt;/ul&gt;</tw-passagedata><tw-passagedata pid="16" name="Bolt" tags="" position="525,925" size="100,100">As soon as the door is open, every muscle in your body comes to life, sending you exploding toward the exit.
 
 In the blink of an eye, you zoom past the cell door, slamming hard into the near wall like arm outstretched to prevent your escape. The wind is thoroughly knocked out of you, leaving your chest sore, and any energy you had before, gone.
 
@@ -299,7 +298,7 @@ With both hands, he cradles the rotund orbs, pulling them up and jiggling them, 
 
 &lt;ul&gt;
 (if:$mindmeter &lt; 11)[&lt;li&gt; [[NO.-&gt;Decline]]
-&lt;li&gt; [[Maybe...-&gt;BadAccept]] You don&#39;t really have a much of a choice at this point.](else:)[&lt;li&gt; [[No...-&gt;BadDecline]]] &lt;li&gt; [[Yes...-&gt;Accept]] Not what you were hoping for, but there&#39;s no reason to hate the inevitable... is there?&quot;
+&lt;li&gt; [[Maybe...-&gt;BadAccept]] You don&#39;t really have a much of a choice at this point.](else:)[&lt;li&gt; [[No...-&gt;BadDecline]]] &lt;li&gt; [[Yes...-&gt;Accept]] Not what you were hoping for, but there&#39;s no reason to hate the inevitable... is there?
 &lt;/ul&gt;</tw-passagedata><tw-passagedata pid="23" name="Decline" tags="" position="775,1325" size="100,100">You stare, incredulous at the request. Not sparing another moment, you back away, shaking your head vigorously.
 
 &quot;//No. No way,//&quot; you say, stunned.
@@ -583,13 +582,13 @@ You&#39;ve escaped your cell.
 [[Continue-&gt;OutsideCell]]
 
 (set: $cellKey to true)
-(set: $brentJailed to true)</tw-passagedata><tw-passagedata pid="48" name="BindGag" tags="" position="1475,1900" size="100,100">Wasting no time, you quickly undo the belt around Brent&#39;s waist, tossing the key ring aside. Though he seems to put up resistance, all you get from Brent are a few mumbles of, &quot;//it hurts.//&quot;
+(set: $brentJailed to true)</tw-passagedata><tw-passagedata pid="48" name="BindGag" tags="" position="1475,1900" size="100,100">Wasting no time, you quickly undo the belt around Brent&#39;s waist, tossing the key ring aside. Though he seems to put up resistance, all you get from Brent are a few broken mumbles of, &quot;//it hurts.//&quot;
 
 Fortunately for you, not only did Brent stumble all the way to the metal bars, but his belt is pretty long. Prying his heavy, limp arms away from his front to around his back, you hastily wrap the belt around them as tight as you can, winding around his wrists and then the sturdy rusted bars. For what you lack in strength, you feel you&#39;ve more than made up with adrenaline as Brent&#39;s motions start regaining force.
 
 Once the belt is secure, you grab the discarded cloth, nearly dropping it the first time on account of its unexpectedly unpleasant warmth and dampness. Balling it up, you find it isn&#39;t quite large enough, so you scrap some hay from the ground, wrapping the cloth around it.
 
-&quot;//Why&#39;d yah -//&quot; Brent starts to grumble, but you take the moment to shove the thing into his mouth. He looks surprised and then, having mostly recovered, yanks back and forth, trying to escape his bonds. Miraculously, the belt holds, for now.
+&quot;//Why&#39;d yah -//&quot; Brent starts to groan, but you take the moment to shove the thing into his mouth. He looks surprised and then, having mostly recovered, yanks back and forth, trying to escape his bonds. Miraculously, the belt holds, for now.
 
 (if:$gown is true and $mindmeter &lt; 10)[You could (link-reveal:&quot;get your gown back&quot;)[(t8n:&quot;dissolve&quot;)(show: ?regown)].
 (hidden:)|regown&gt;[You grab your hospital gown where Brent tossed it and pull it back on. Meanwhile, Brent just glares at you.(set: $gown to true)]]
@@ -615,25 +614,250 @@ In no time at all, you&#39;ve licked up wherever you can(if:$gown is true)[ that
 
 [[LeaveCleaned]]
 
-(set: $mindmeter to $mindmeter + 5)</tw-passagedata><tw-passagedata pid="51" name="LeaveCleaned" tags="" position="1050,2200" size="100,100">With that over with, you stride past those rusted metal bars with a sigh of relief.
+(set: $mindmeter to $mindmeter + 5)</tw-passagedata><tw-passagedata pid="51" name="LeaveCleaned" tags="" position="1075,2200" size="100,100">With that over with, you stride past those rusted metal bars with a sigh of relief.
 
 You&#39;ve escaped your cell.
 
 
-[[Continue-&gt;OutsideCell]]</tw-passagedata><tw-passagedata pid="52" name="Wait5" tags="" position="450,1450" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="53" name="Awaken" tags="" position="1600,2050" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="54" name="OutsideCell" tags="" position="1075,2350" size="100,100">You are in the hallway, just in front of your cell. There&#39;s no distinguishable difference between the hallway extending to your left and right.(if:$brentBound is true)[
+[[Continue-&gt;OutsideCell]]</tw-passagedata><tw-passagedata pid="52" name="Wait5" tags="" position="450,1450" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="53" name="Awaken" tags="" position="1600,2050" size="100,100">Pain thunders in your head, accompanying you as you awaken.
+
+At first, you think that your eyes aren&#39;t adjusting right, but then you realize that the room is just really dark. You can&#39;t make out any details, save for some blinking lights around you.
+
+When you try getting up, your arms and legs don&#39;t move. At first, you think that you&#39;ve become too weak to move them, but the slight chaffing on your wrists, ankles and abdomen tells a different story. Fear ripples down your spine as you realize you&#39;re bound in the dark, and, as the slight chill on your skin attests, nude to boot.
+
+
+* [[Keep silent.-&gt;KeepSilent]]
+* [[Shout for help!-&gt;Shout]]</tw-passagedata><tw-passagedata pid="54" name="OutsideCell" tags="" position="1075,2350" size="100,100">You are in the hallway, just in front of your cell. There&#39;s no distinguishable difference between the hallway extending to your left and right.(if:$brentBound is true)[
 
 Brent is tied to the cell door here, occasionally struggling against his bounds while glaring at you.](else-if: $brentJailed is true)[
 
 Brent is standing stiffly inside the cell, arms crossed, glaring at you, but he astonishingly doesn&#39;t say a word. It&#39;s unnerving.]
 
-</tw-passagedata><tw-passagedata pid="55" name="LeaveHorseFun" tags="" position="850,2075" size="100,100">Who cares what you&#39;re covered in? You can sort it all out when you get out. Without another second spared, you step out the cell, watching as Brent turns a corner to your left. The last you see of him is his swinging tail.
+
+[[&lt; Left-&gt;PrisonHallwayLeft]] | [[Right &gt;-&gt;PrisonHallwayRight]]
+
+(if:$mindmeter &gt; 29 and $brentBound)[&lt;li&gt; Toy with Brent. Seeing him like this gives you ideas.]</tw-passagedata><tw-passagedata pid="55" name="LeaveHorseFun" tags="" position="850,2075" size="100,100">Who cares what you&#39;re covered in? You can sort it all out when you get out. Without another second spared, you step out the cell, watching as Brent turns a corner to your left. The last you see of him is his swinging tail.
 
 You&#39;ve escaped your cell.
 
 
 [[Continue-&gt;OutsideCell]]</tw-passagedata><tw-passagedata pid="56" name="GoAfter2" tags="" position="575,2075" size="100,100">Nodding your thanks, you catch up to him, &lt;b&gt;arriving at a temp end!&lt;/b&gt;
 
-[[Play Again!-&gt;Beginning]]</tw-passagedata></tw-storydata>
+[[Play Again!-&gt;Beginning]]</tw-passagedata><tw-passagedata pid="57" name="footer" tags="footer" position="800,50" size="100,100">
+
+---
+
+(t8n:&quot;slide-up&quot;)+(link-rerun:&quot;Player Menu&quot;)[
+Player stats here]</tw-passagedata><tw-passagedata pid="58" name="BrentEnter" tags="" position="1625,2325" size="100,100">A ray of light shines into the room from your right, illuminating your middle. You look over and see a very equine silhouette standing in a door way.
+
+&quot;&lt;i&gt;Good t&#39;see you woke, &lt;/i&gt;fella&lt;i&gt;,&lt;/i&gt;&quot; Brent says with a sharp menacing tone.
+
+&quot;&lt;i&gt;Look, I&#39;m sorry, I just wanted to get out of here, and everything&#39;s so-&lt;/i&gt;&quot; you&#39;re cut off as the lights come on in the room, blinding you for a moment.
+
+&quot;&lt;i&gt;I don&#39;t want none of your sorrys&lt;/i&gt;,&quot; he states, walking into the room. You avoid looking at him, taking the moment to instead look around the room.
+
+You are strapped onto a steel table with some kind of polyethylene binds. There&#39;s some machinery and tools sitting on a counter on a wall to your left that you&#39;d expect to see in a chemistry lab. There is also a monitor folded up against the ceiling in front and above you.
+
+Brent, now not even wearing his belt, walks over to the counter, out of your view, just behind your head. You hear the sound of typing briefly, and then that muscled body comes back into view.
+
+In each hand, he holds two beakers, both filled with what looks like water, but you get the sneaking suspicion that they aren&#39;t. 
+
+The horse inspects the labels studiously. After a moment, he seems satisfied and downs one of them before approaching the table you&#39;re strapped against.
+
+You know exactly what he&#39;s planning to do and quickly shut your mouth. It seems that Brent expected this, and doesn&#39;t immediately go for your mouth. Your eyes track him warily as he moves to the centre of the table.
+
+
+[[Continue-&gt;BrentEnter2]]</tw-passagedata><tw-passagedata pid="59" name="BrentEnter2" tags="" position="1750,2450" size="100,100">Out of the blue, his hand goes for your exposed groin. His hoofed hand fondles you, gently kneading your flaccid dick and tight sack.
+
+&quot;&lt;i&gt;To let you know, fella&#39;, as I&#39;m sure you&#39;re wonderin&#39; what&#39;s goin&#39; on here, I figured that someone who plays dirty would like to be dirty,&lt;/i&gt;&quot; he explains calmly, continuing to touch your junk.
+
+&quot;&lt;i&gt;Now, you&#39;re stuck on this table, and yah should know, there&#39;s no where for you to go,&lt;/i&gt;&quot; he stops and walks up to the front of the table. The flared tip of his thick cock has begun to breach his fleshy sheath, and a sense of foreboding fills you. Brent gives himself a grope. A dollop of pre leaks out of the tip, and he presses his thumb into the tip, drawing little circles until his digit is sticky with pre.
+
+&quot;&lt;i&gt;You&#39;ll wanna listen to this ol&#39; horsie, because either way, I&#39;m going to get what I want.&lt;/i&gt;&quot; Brent leans down, resting his elbow to the left of your head as he leans in close, white mane nearly tickling your nose. The smell of horse wraps around you as he smears his pre on your upper lip.
+
+
+* [[Comply]]. You&#39;re really not in a position to fight him, bound as you are.</tw-passagedata><tw-passagedata pid="60" name="KeepSilent" tags="" position="1500,2200" size="100,100">You clamp your mouth shut and don&#39;t make a single movement, praying that no one will notice you have awoken.
+
+Were you not terrified out of your mind, and restrained, you might&#39;ve actually fallen asleep. Instead, your heart beats rapidly, expecting the worst at any moment.
+
+Finally, all too familiar footsteps sound out from somewhere, and you gulp.
+
+
+[[Continue-&gt;BrentEnterSilent]]</tw-passagedata><tw-passagedata pid="61" name="Shout" tags="" position="1625,2200" size="100,100">Terrified and panicking, you cry out, &quot;&lt;i&gt;Help! Someone get me out of here!&lt;/i&gt;&quot;
+
+Tense moments pass. You begin to wonder if you&#39;ve made a mistake.
+
+Suddenly, all too familiar footsteps sound out from somewhere, and you gulp.
+
+
+[[Continue-&gt;BrentEnter]]</tw-passagedata><tw-passagedata pid="62" name="BrentEnterSilent" tags="" position="1500,2325" size="100,100">A ray of light shines into the room from your right, and you quickly pretend to still be unconscious.
+
+&quot;&lt;i&gt;Still out cold,&lt;/i&gt;&quot; you hear Brent grumble. The lights suddenly blaze on and you&#39;re almost caught off guard, closing your eyes just a bit tighter.
+
+The clop of Brent&#39;s steps as he enters the room advance towards you, but then nearer your legs, then around to your left. As discreetly as you can, you crack an eye open, getting a full view of Brent&#39;s toned butt.
+
+He is standing at some counter adjacent to you, now without his belt, inspecting what seems to be two beakers of water, though you get the feeling that they are anything but. He brings each to his face, reading the labels on them carefully before returning them to the table. Suddenly, he turns around to face you. You close your eyes as fast as you can.
+
+You don&#39;t know what to expect, but the slap across your face was definitely not one of them. The hoofed hand hits you on the cheek, not enough to cause damage, but you&#39;d lie saying it didn&#39;t hurt. Looks like you&#39;ve been caught.
+
+&quot;&lt;i&gt;Good. You&#39;re awake now,&lt;/i&gt;&quot; Brent says without inflection.
+
+Perhaps he didn&#39;t notice you watching him after all.
+
+
+[[Continue-&gt;BrentEnterSilent2]]</tw-passagedata><tw-passagedata pid="63" name="BrentEnterSilent2" tags="" position="1500,2450" size="100,100">Brent gives brief smirk and then walks out of sight, above your head, and you a hear a smattering of typing. You wonder how well Brent can even type with those strange fingers of his when you&#39;re distracted by a light activating in the corner of the room, revealing the location of a camera.
+
+Coming back into view, Brent grabs the two beakers and brings one of them up to his lips.
+
+
+* [[Stop him from drinking!-&gt;StopDrink]]
+* [[Do nothing.-&gt;BrentDrink]]</tw-passagedata><tw-passagedata pid="64" name="StopDrink" tags="" position="1500,2575" size="100,100">In a rash moment, you immediately shout, &quot;Stop, don&#39;t drink that!&quot;
+
+Surprisingly, he does pause, furrowing his brow at you.
+
+&quot;Why?&quot;
+
+
+* [[No reason.-&gt;BrentDrinkLied]] You didn&#39;t think you&#39;d get this far.
+* Try to [[lie to him-&gt;MakeUpLie]] and see if he falls for it.</tw-passagedata><tw-passagedata pid="65" name="BrentDrinkLied" tags="" position="1625,2575" size="100,100">Brent scoffs at your attempt to lie and quickly downs the liquid before approaching your table with the other in hand.
+
+You know exactly what he&#39;s planning to do and quickly shut your mouth. It seems that Brent expected this, and doesn&#39;t immediately go for your mouth. Your eyes track him warily as he moves to the centre of the table.
+
+
+[[Continue-&gt;BrentEnter2]]</tw-passagedata><tw-passagedata pid="66" name="MakeUpLie" tags="" position="1500,2700" size="100,100">Seeing as he actually listens to you, perhaps you can turn the situation around.
+
+&quot;//That&#39;s not what you think it is,//&quot; you say, thinking back to him reading the labels.
+
+&quot;//Ha! Yah think I didn&#39;t make sure I knew exactly which one of these I was s&#39;posed to down?//&quot; He shakes his mane, disappointed. &quot;//Though stupid things woulda been better if they didn&#39;t both look the darn same,//&quot; he mutters.
+
+
+* [[Stick with your lie-&gt;MakeUpLie2]] and remain firm that he&#39;s drinking the wrong one.
+* Just [[let him drink it-&gt;BrentDrinkLied]].</tw-passagedata><tw-passagedata pid="67" name="MakeUpLie2" tags="" position="1500,2825" size="100,100">&quot;I was actually awake when you came in and I saw you look at the beakers and, uh, you switched them around,&quot; you try and explain. Brent looks at you skeptically.
+
+&quot;And why would you tell me that, hm?&quot;
+
+A bit vindictive, you angrily reply.
+
+&quot;Well, I&#39;m strapped to a table like a test subject-&quot;
+
+&quot;Well, fella, you are!&quot; Brent sardonically says, cutting you off.
+
+&quot;And you&#39;re about to put God knows what into me so best case scenario is that you give me exactly what I intended. I&#39;m just looking out for my own skin.&quot;
+
+Behind your anger, you hold your breath praying that Brent will buy your ruse.
+
+&quot;//And how do you suppose I &quot;switched them around&quot;,//&quot; he says, gesturing to the labels on each.
+
+
+* [[Try to keep lying-&gt;MakeUpLie3]]. You wouldn&#39;t have gotten this far if he was actually smart right?
+* [[Just give it up-&gt;BrentDrinkLied]] and hope you haven&#39;t made things worse by lying.</tw-passagedata><tw-passagedata pid="68" name="BrentDrink" tags="" position="1625,2450" size="100,100">Brent downs the liquid as though it were just nothing but water, before turning his attention to you.
+
+You know exactly what he&#39;s planning to do and quickly shut your mouth. It seems that Brent expected this, and doesn&#39;t immediately go for your mouth. Your eyes track him warily as he moves to the centre of the table.
+
+[[Continue-&gt;BrentEnter2]]</tw-passagedata><tw-passagedata pid="69" name="MakeUpLie3" tags="" position="1425,2975" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="70" name="Comply" tags="" position="1750,2600" size="100,100">You grimace, and then open your mouth, breathing in the smell of horse pre. He&#39;s right, there&#39;s nothing you can do. He&#39;s so powerful and strong, and you&#39;re so weak, not even counting the fact that you&#39;re naked and bound to a table.
+
+&quot;&lt;i&gt;Good boy,&lt;/i&gt;&quot; he whispers, pouring the liquid into your mouth. After a second of hesitation, you swallow.
+
+Contrary to expectation, the substance is identical to water, and you almost ask if this is just a joke. Brent backs off, and your gaze lingers on his back and swishing tail as he drops off the beaker. You&#39;re expecting him to break into laughter at any point now and free you. He seems like that kind of guy.
+
+Admittedly, you did do a pretty terrible thing back there, and seeing as nothing has happened at all, you start to feel real ashamed. 
+
+&quot;&lt;i&gt;Uh, Brent? I&#39;m sorry about what I did. Back there,&lt;/i&gt;&quot; you apologize, genuinely. &quot;&lt;i&gt;That wasn&#39;t right.&lt;/i&gt;&quot; Brent turns around at your apology and upon returning to the table, strokes your phallus again.
+
+&quot;&lt;i&gt;Hey, now there&#39;s some good coming out of yah&lt;/i&gt;,&quot; he says, slowly tugging back on your loose foreskin to fully expose the glans. You shiver at the cool air while your eyes catch onto Brent&#39;s own tool. For the first time, you feel a pang of envy. Not only is Brent kind and forgiving, he has a fairly decent body too.
+
+With his other hand, Brent reaches down below the table. With a jerk, the table begins to move, rising into the air; as it does so, Brent releases contact and you look to him, wondering why he stopped. He doesn&#39;t say anything and you don&#39;t voice it, instead waiting patiently to see the outcome. Once the table reaches to about his chest, it rotates, bringing you from laying on your back to basically standing upright against the slanted table. It was out of sight when you were laying down, but a slight ledge allows you to stand so that you&#39;re not held up solely by your bonds.
+
+Now, you&#39;re at eye level with Brent. He gets close to the table, and places his hand on your chest, slowly sliding it down.
+
+&quot;&lt;i&gt;Still, I feel that I need more than an apology, don&#39;tcha think so too, fella&#39;?&lt;/i&gt;&quot; he asks innocuously. His hand brushes over your pert nipple and down your core. You feel a twitch in your nether, but the hand slips past, over your inner thigh. Brent is so close, you can clearly make out the distinct smell of horse and it makes you a bit remorse for whatever reason.
+
+&quot;&lt;i&gt;Sure. I owe you, don&#39;t I?&lt;/i&gt;&quot; you agree. Brent backs away and your shoulders sag a bit at the distance. Brent looks over you with a discerning eye that you can&#39;t tell as genuine or not. Either way, you blush a bit as the big horse lavishes you with attention.
+
+&quot;&lt;i&gt;You don&#39;t look too comfortable, how &#39;bout I free those hands of yours?&lt;/i&gt;&quot; he offers.
+
+&quot;&lt;i&gt;Okay, thanks,&lt;/i&gt;&quot; you say, a bit surprised. Brent is so generous, you think. How could you have ever done anything to hurt him?
+
+True to his words, he clicks another button or two on the back of the table and then pulls on the bands holding your wrists. The straps easily slide out of place.
+
+
+[[Continue-&gt;Comply2]]
+
+(set: $mindmeter to $mindmeter + 10)</tw-passagedata><tw-passagedata pid="71" name="Comply2" tags="" position="1750,2725" size="100,100">&quot;&lt;i&gt;How&#39;s that, fella&#39;?&lt;/i&gt;&quot; he inquires. You eagerly nod your thanks, touched at his concern. He approaches and goes right for your crotch again. This time, as he rubs the glans, he leans down to huff on it gently, teasing you. Despite yourself, you let a little moan, feeling yourself harden just a bit and wonder why Brent is so nice.
+
+With his head bowed, you can&#39;t help but reach forward, running your hand through his mane and rubbing behind his perked ears. You hope he stays here because you can only smell him when he&#39;s close, and he smells so good.
+
+&quot;&lt;i&gt;Yah like this, don&#39;tchu?&lt;/i&gt;&quot; he asks.
+
+&quot;&lt;i&gt;Yes,&lt;/i&gt;&quot; you mumble in reply. Brent rises back up, but your hands remain on him, sweeping down his solid neck and across the smooth fur on his chiselled chest. He steps even closer, and you grin, leaning forward to get closer to him.
+
+&quot;&lt;i&gt;I think I know how you can repay me,&lt;/i&gt;&quot; he says.
+
+&quot;&lt;i&gt;Anything, Brent, whatever you want,&lt;/i&gt;&quot; you reply without hesitation. It&#39;d be great to reciprocate his generosity. Without words, he grabs your hands and moves them down, across his chest, over each bump on his abs and down to the warm, smooth sheath.
+
+You gasp.
+
+
+[[Continue-&gt;Comply3]]</tw-passagedata><tw-passagedata pid="72" name="Comply3" tags="" position="1750,2850" size="100,100">A blush crosses your face. Brent continues with his giving nature, allowing you to have the honour of helping him, especially in that way.
+
+Not wasting another second, you stroke the large sheath using both hands. They glide from bottom to the top, coaxing out the appreciable phallus. Brent closes his eyes and murmurs in approval, but you never look down, instead continuing to gaze at his handsome muzzle, and letting your hands form the picture in your mind.
+
+It&#39;s not long before your hands slide from sheath to the hot throbbing dick that rapidly fills the air with a thick, equine musk. Your hands rove over the mottled length eagerly, smearing the stream of pre leaking from the tip around liberally. In no time, Brent&#39;s pre coats your fingers which grow warm.
+
+Unbeknownst to you initially, the fingernails tipping your fingers loses its pink hue, darkening and toughening up. Meanwhile, slight brown hairs begin spreading down your hands. Taking initiative, Brent moves closer, taking your hands with a firm grip and using them like an intermediary in jacking himself off. He guides your hands to the tip, allowing you a moment to press into the leaking tip. Confidently, he presses your hands back onto your own body, smearing his pre against your chest. In doing so, a wave of pin pricks expand outward from the dick slime on you.
+
+Brent grins wider, watching you, but you just gaze back, dazed. Before you realize, Brent has guided your fingers to your mouth and you suckle and lick off the cooled pre. Meanwhile, the hunk had gotten closer, close enough so that his blazing hot horsemeat is now touching your belly. When he starts grinding, you shudder in bliss, as your own human dick is pulled along for the ride - when did you get so hard?
+</tw-passagedata><tw-passagedata pid="73" name="Just give it up-&gt;" tags="" position="1525,2975" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="74" name="PrisonHallwayLeft" tags="" position="950,2350" size="100,100">As you walk along, you glance inside the concrete cells, all of which are empty and look about the same as yours. 
+
+Then, you pass one with someone inside.
+
+
+* [[Ignore them-&gt;Ignore]]
+* [[Inspect them-&gt;Inspect]]</tw-passagedata><tw-passagedata pid="75" name="PrisonHallwayRight" tags="" position="1200,2350" size="100,100">At this end of the hallway there is a staircase and ramp leading up, but tucked just to its right is a small, unimposing door - obviously made to be as inconspicious as possible - but ironically this fact makes it even more noticeable.
+
+The staircase itself is wide, about the breadth of four people. There is a ramp right next to it, but there is no railing and it goes at the exact same incline as the staircase.
+
+The door adjacent is by contrast narrow, and covered in galvanized steel. There is a key card scanner, a number pad and what you think is some other scanner placed to the right of it. Of all things about this door, the oddest has to be the small placard on it that says &quot;&lt;font face=&quot;TimesNewRoman&quot;&gt;Service Closet&lt;/font&gt;&quot;.
+
+
+Take a closer look at the [[suspicious door-&gt;InspectDoor]].
+
+
+[[&lt; Left-&gt;OutsideCell]] | [[^ Up stairs-&gt;SouthEndTesthall]]</tw-passagedata><tw-passagedata pid="76" name="Ignore" tags="" position="875,2475" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="77" name="Inspect" tags="" position="1000,2475" size="100,100">You immediately look closer, and see that there is indeed a &lt;i&gt;human&lt;/i&gt; in here. He, you presume from their figure, is huddled against the back wall, hugging his knees and leaning against the wall. He is unclothed.
+
+He hasn&#39;t reacted to, or hasn&#39;t noticed you.
+
+
+* [[Move on-&gt;Ignore]] and leave them alone.
+* [[Call to them.-&gt;CallTo]]</tw-passagedata><tw-passagedata pid="78" name="CallTo" tags="" position="1000,2600" size="100,100">&quot;Hey! Hey you!&quot; you call, as loudly as you dare.
+
+After a while, he straightens up, having apparently been asleep. He looks over to you, and then presses up against the wall more.
+
+(if: $gown is true)[&quot;Y-yes? Where did you come from?&quot; he asks, nervously.](else:)[&quot;W-What do you want?&quot; he asks, sounding more than slightly apprehensive.]
+hadBrentFun@ His eyes look at your soiled form warily and you notice his nose twitch.
+
+</tw-passagedata><tw-passagedata pid="79" name="SouthEndTesthall" tags="" position="1200,2475" size="100,100">You are at one end of a long hallway that, unlike the one outside your cell, looks less like a dungeon and more like a medical facility. Fluorescent lights line the ceiling, the floor is linoleum, and the walls are a bleached white.
+
+Several swing doors line the right side of the hall, all with placards reading &#39;B3-&#39; followed by two digits. On the contrary, there is just one door near you on the left. Its appearance is somewhat reminiscent of the &#39;Service Closet&#39; you saw before, though it only has a key card scanner and a sign declares it as &#39;Service Corridor and Stores&#39;. Behind you are the stairs and ramp back to the cells.
+
+
+
+[[Down stairs-&gt;PrisonHallwayRight]]</tw-passagedata><tw-passagedata pid="80" name="InspectDoor" tags="" position="1325,2350" size="100,100">You approach the door and looking closer, realize there is no handle or means to pull open the door. A quick push reveals what you suspected. The metal door is firmly shut and locked.
+
+Beside the door, lined up from top to bottom, are three ways to open the door, probably. A (link-reveal:&quot;key pad with nine digits&quot;)[(t8n:&quot;dissolve&quot;)(show: ?keypad)], a place to (link-reveal:&quot;insert a card&quot;)[(t8n:&quot;dissolve&quot;)(show: ?keycard)], and a (link-reveal:&quot;glass covered panel &quot;)[(t8n:&quot;dissolve&quot;)(show: ?scanner)] about the size of a hand.
+(hidden:)|keypad&gt;[
+There is a green button you believe is meant to submit the passcode. Not even knowing how long or what it could possibly be, you decide it&#39;s better not to get locked out from too many wrong attempts, or worse, set off an alarm.](hidden:)|keycard&gt;[
+You don&#39;t have a key card.](hidden:)|scanner&gt;[
+You&#39;re not entirely sure what this is, but you guess it&#39;s some kind of hand scanner. Placing your hand on it results in a small tingle of electricty for a few seconds, but nothing else happens.]
+
+
+[[Move on-&gt;PrisonHallwayRight]]. There doesn&#39;t seem to be anything you can do here.</tw-passagedata><tw-passagedata pid="81" name="startup" tags="startup" position="900,50" size="100,100">{
+&lt;link rel=&quot;icon&quot; href=&quot;/favicon.ico&quot;&gt;
+(set: $mindmeter to 0)
+(set: $gown to true)
+(set: $brentBound to false)
+(set: $cellKey to false)
+(set: $brentJailed to false)}</tw-passagedata></tw-storydata>
 <script title="Twine engine code" data-main="harlowe">"use strict";var _slicedToArray=function(){return function(e,t){if(Array.isArray(e))return e;if(Symbol.iterator in Object(e))return function(e,t){var n=[],r=!0,i=!1,a=void 0;try{for(var o,s=e[Symbol.iterator]();!(r=(o=s.next()).done)&&(n.push(o.value),!t||n.length!==t);r=!0);}catch(e){i=!0,a=e}finally{try{!r&&s.return&&s.return()}finally{if(i)throw a}}return n}(e,t);throw new TypeError("Invalid attempt to destructure non-iterable instance")}}(),_typeof="function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function(e){return typeof e}:function(e){return e&&"function"==typeof Symbol&&e.constructor===Symbol&&e!==Symbol.prototype?"symbol":typeof e};function _defineProperty(e,t,n){return t in e?Object.defineProperty(e,t,{value:n,enumerable:!0,configurable:!0,writable:!0}):e[t]=n,e}function _toConsumableArray(e){if(Array.isArray(e)){for(var t=0,n=Array(e.length);t<e.length;t++)n[t]=e[t];return n}return Array.from(e)}!function(){
 /**
  * @license almond 0.3.3 Copyright jQuery Foundation and other contributors.
