@@ -9,11 +9,15 @@
 </head>
 <body>
 <tw-story><noscript><tw-noscript>JavaScript needs to be enabled to play The Prison.</tw-noscript></noscript></tw-story>
-<tw-storydata name="The Prison" startnode="1" creator="Twine" creator-version="2.3.13" ifid="9F2F6945-72EC-4333-8E62-23F2577AFCAC" zoom="1" format="Harlowe" format-version="3.2.1" options="" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css"></style><script role="script" id="twine-user-script" type="text/twine-javascript">// Set icon
+<tw-storydata name="The Prison" startnode="1" creator="Twine" creator-version="2.3.13" ifid="9F2F6945-72EC-4333-8E62-23F2577AFCAC" zoom="1" format="Harlowe" format-version="3.2.1" options="" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">html * {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 150;
+}</style><script role="script" id="twine-user-script" type="text/twine-javascript">// Set icon
 var favicon  = document.createElement("link");
 favicon.rel  = "shortcut icon";
 favicon.href = "favicon.ico";
-document.head.appendChild(favicon);</script><tw-passagedata pid="1" name="Beginning" tags="noFooter" position="675,75" size="100,100">&lt;h1 style=&quot;font-family:impact;font-size:140%;text-align:center;&quot;&gt;THE PRISON&lt;/h1&gt;
+document.head.appendChild(favicon);
+</script><tw-passagedata pid="1" name="Beginning" tags="noFooter" position="675,75" size="100,100">(background:(gradient: 90, 0,transparent,0.3786,#3e0f0a,0.6563,#400100,1,transparent))[&lt;h1 style=&quot;font-family:impact;font-size:160%;text-align:center;&quot;&gt;THE PRISON&lt;/h1&gt;]
 
 You&#39;re an ordinary guy doing ordinary things, when you are somehow captured. Trapped inside of a mysterious prison, you must find your way out - before succumbing to whatever &#39;dangers&#39; lurk within.
 
@@ -304,7 +308,7 @@ With both hands, he cradles the rotund orbs, pulling them up and jiggling them, 
 
 &quot;//No. No way,//&quot; you say, stunned.
 
-Brent doesn&#39;t seem to take this to heart, and sighs with a shrug of his broad shoulders. Picking up the cloth from the ground, he heads out the door.
+Brent doesn&#39;t seem to take offence, and sighs with a shrug of his broad shoulders. Picking up the cloth from the ground, he heads out the door.
 
 &quot;//Eh, your loss,//&quot; he states, swiftly closing and locking the door behind him. &quot;//My job’s done anyway.//&quot;
 
@@ -566,7 +570,7 @@ In the middle of one of your hefts, you feel the teste tighten up; it&#39;s your
 
 
 * Attempt to [[swallow it all-&gt;Swallow]].
-* [[Pull back-&gt;PullBack]] because you&#39;d rather to not drown.</tw-passagedata><tw-passagedata pid="44" name="Leave" tags="" position="1475,2050" size="100,100">Keeping an eye on Brent, you pick up the key loop and leave the cell, closing and locking the creaky door behind you. You sigh with relief.
+* [[Pull back-&gt;PullBack]] because you&#39;d rather to not drown.</tw-passagedata><tw-passagedata pid="44" name="Leave" tags="" position="1475,2072" size="100,100">Keeping an eye on Brent, you pick up the key loop and leave the cell, closing and locking the creaky door behind you. You sigh with relief.
 
 You&#39;ve escaped your cell.
 
@@ -909,7 +913,7 @@ After a while, he straightens up, having apparently been asleep. He looks over t
 (unless: $clothing is &quot;none&quot;)[&quot;Y-yes? Where did you come from?&quot; he asks, nervously.](else:)[&quot;W-What do you want?&quot; he asks, sounding more than slightly apprehensive.]
 
 
-</tw-passagedata><tw-passagedata pid="78" name="SouthEndTesthall" tags="canUseItems" position="1200,2625" size="100,100">You are at the south end of a long hallway that, unlike the one outside your cell, looks less like a dungeon and more like a medical facility. Fluorescent lights line the ceiling, the floor is linoleum, and the walls are a bleached white.
+</tw-passagedata><tw-passagedata pid="78" name="SouthEndTesthall" tags="canUseItems" position="1200,2623" size="100,100">You are at the south end of a long hallway that, unlike the one outside your cell, looks less like a dungeon and more like a medical facility. Fluorescent lights line the ceiling, the floor is linoleum, and the walls are a bleached white.
 
 Several swing doors line the right side of the hall, all with placards reading &#39;B3-&#39; followed by two digits. On the contrary, there is just one (link-reveal:&quot;door&quot;)[(t8n:&quot;dissolve&quot;)(show: ?serviceDoor)] near you on the left. Its appearance is somewhat reminiscent of the &#39;Service Closet&#39; you saw before, though it only has a key card scanner and a sign declares it as &#39;Service Corridor and Stores&#39;. Behind you are the stairs and ramp back to the cells.
 (hidden:)|serviceDoor&gt;[
@@ -1034,7 +1038,8 @@ You&#39;re not entirely sure what this is, but you guess it&#39;s some kind of h
 		]
 	)
 )
-}</tw-passagedata><tw-passagedata pid="81" name="B3-06" tags="canUseItems" position="1325,2500" size="100,100">Inside the room there is an odd (link-reveal:&quot;metal table&quot;)[(t8n:&quot;dissolve&quot;)(show: ?table)], some manner of lab bench that extends against the opposing wall and a bit into the corner of the left wall, a camera in the corner and some (link-reveal:&quot;metal cabinets&quot;)[(t8n:&quot;dissolve&quot;)(show: ?cabinet)]. A (link-reveal:&quot;computer&quot;)[(t8n:&quot;dissolve&quot;)(show: ?computer)] sits on the part of the lab bench on the left wall.
+}&lt;link rel=&quot;preconnect&quot; href=&quot;https://fonts.gstatic.com&quot;&gt;
+&lt;link href=&quot;https://fonts.googleapis.com/css2?family=Roboto:wght@300&amp;display=swap&quot; rel=&quot;stylesheet&quot;&gt;</tw-passagedata><tw-passagedata pid="81" name="B3-06" tags="canUseItems" position="1325,2500" size="100,100">Inside the room there is an odd (link-reveal:&quot;metal table&quot;)[(t8n:&quot;dissolve&quot;)(show: ?table)], some manner of lab bench that extends against the opposing wall and a bit into the corner of the left wall, a camera in the corner and some (link-reveal:&quot;metal cabinets&quot;)[(t8n:&quot;dissolve&quot;)(show: ?cabinet)]. A (link-reveal:&quot;computer&quot;)[(t8n:&quot;dissolve&quot;)(show: ?computer)] sits on the part of the lab bench on the left wall.
 
 (hidden:)|table&gt;[
 The table has a short metal lip on one end and several straps attached to its surface. On one side, there are a set of controls, but none of them work at the moment, as reinforced by a red status light indicator.](hidden:)|cabinet&gt;[
@@ -1180,7 +1185,7 @@ The cat startles, reacting faster than you imagined, but (if: $swallowedBrentCum
 
 At the top, there&#39;s a set of doors. Shoving them open, you slam into Brent&#39;s brick like body, crashing down to the ground roughly.
 
-&quot;//Thought I heard running. Couldn&#39;t help but run back to me?//&quot; Brent teases. As you scramble to get up Brent abruptly yanks you into an unyielding hug. Confusion washes over you, quickly broken by the ensuing wave of numb realization from the sharp prick in your arm.
+&quot;//Thought I heard running. Couldn&#39;t help but run back to me?//&quot; Brent teases. As you scramble to get up, Brent abruptly yanks you into an unyielding hug. Confusion washes over you, quickly broken by the ensuing wave of numb realization from the sharp prick in your arm.
 
 &quot;//You actually did something useful,//&quot; the cat says to Brent. &quot;//Thank you.//&quot; The words could not have contained any less sincerity.
 
@@ -1199,8 +1204,11 @@ Click to restart (click:&quot;restart&quot;)[(restart:)]</tw-passagedata><tw-pas
 
 
 * [[Agree to go.-&gt;AgreeToCat]]
-* [[Refuse to go.-&gt;RefuseCat]]</tw-passagedata><tw-passagedata pid="98" name="OnTheRunUp" tags="" position="275,1600" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="99" name="header" tags="header" position="1050,75" size="100,100">(hidden:)|header&gt;[insert stuff over time, or occasional quips here (dirty thoughts, being dirty, tf progress, &quot;party&quot; member quips}]{
+* [[Refuse to go.-&gt;RefuseCat]]</tw-passagedata><tw-passagedata pid="98" name="OnTheRunUp" tags="" position="275,1600" size="100,100">You pound up the stairs, nearly completely out of breath by this point. A long hallway stretches before you and for a second it feels as though you&#39;ve somehow been transported into a hospital, but the fear of being caught drives that sesnation away.
 
+You are at the south end of a long hallway that, unlike the one outside your cell, looks less like a dungeon and more like a medical facility. Fluorescent lights line the ceiling, the floor is linoleum, and the walls are a bleached white.
+
+Several swing doors line the right side of the hall</tw-passagedata><tw-passagedata pid="99" name="header" tags="header" position="1050,75" size="100,100">(hidden:)|header&gt;[insert stuff over time, or occasional quips here (dirty thoughts, being dirty, tf progress, &quot;party&quot; member quips}]{
 }</tw-passagedata><tw-passagedata pid="100" name="PrisonHallwayLeftEnd" tags="" position="825,2375" size="100,100">This end of the hallway has a staircase leading up.
 
 
@@ -1212,7 +1220,7 @@ Click to restart (click:&quot;restart&quot;)[(restart:)]</tw-passagedata><tw-pas
 * This is your chance. Second times the charm and [[make a break for it.-&gt;BoltCat]]
 * [[Follow the cat.-&gt;FollowCat]]</tw-passagedata><tw-passagedata pid="103" name="RefuseCat" tags="" position="550,2325" size="100,100">The sable cat sighs slightly.
 
-&quot;//Please don&#39;t be difficult. I guarentee you that you do not have a choice in the matter and it is through my grace that I&#39;m even giving you chance to proceed with civility.//&quot;
+&quot;//Please don&#39;t be difficult. I guarentee you that you do not have a choice in the matter and it is through my grace that I am even giving you chance to proceed with civility.//&quot;
 
 
 * Fine. [[Agree to go.-&gt;AgreeToCat]]
@@ -1257,9 +1265,9 @@ The cabinets reach nearly to the ceiling and are unlabelled. There is no visible
 
 (if: $metJin is false)[As you (if: $perroFollowing is true)[and Perro ]enter, you immediately notice someone by the computer. Your entrance causes them to jump in surprise, and they rapidly spin to face you. They are a ferret, wearing an unzipped sweater that does not fit, exposing their midriff, and shorts that don&#39;t really fit either. They stare at you for a second.
 
-&quot;//Wait, who are you (if: $perroFollowing is true)[two]? I&#39;ve never seen you before.//&quot;(if: $clothing is &quot;none&quot;)[ His eyes drop down slightly to your exposed ($dick:) and you see him take a breath. &quot;//I swear, if you jump me like all those other horndogs,//&quot; he warns, though his eyes keep flitting back down.]
+&quot;//Wait, who are you(if: $perroFollowing is true)[ two]? I&#39;ve never seen you before.//&quot;(if: $clothing is &quot;none&quot;)[ His eyes drop down slightly to your exposed ($dick:) and you see him take a breath. &quot;//I swear, if you jump me like all those other horndogs,//&quot; he warns, though his eyes keep flitting back down.]
 
-When he finishes talking, you suddenly notice the strong musk in the room. Unlike the more masculine body smells you&#39;ve encountered, this entirely animalistic.
+When he finishes talking, you suddenly notice the strong musk in the room. Unlike the more masculine body smells you&#39;ve encountered, this is entirely animalistic.
 
 
 * [[Ask them some questions.-&gt;QuestionFerret]]
@@ -1303,9 +1311,11 @@ Unwilling to succumb to the crippling lust, you tear your attention away.(if: $p
 
 
 (link-goto: &quot;Continue&quot;, $prevPassage){
-(set: $items to it - (a:&quot;Cloudy Flask&quot;))}</tw-passagedata><tw-passagedata pid="115" name="FollowCat" tags="" position="450,2475" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="116" name="QuestionFerret" tags="" position="1068,2853" size="100,100">(set: _asked to false)(set: _name = &quot;the ferret&quot;)(link:&quot;Who are you?&quot;)[&quot;//Who are you?//&quot; you ask.
+(set: $items to it - (a:&quot;Cloudy Flask&quot;))}</tw-passagedata><tw-passagedata pid="115" name="FollowCat" tags="" position="450,2475" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="116" name="QuestionFerret" tags="" position="1068,2853" size="100,100">They stare at you, waiting for a response.
 
-&quot;//Oh, asking my name? How polite. I&#39;m Jin.//&quot;(set: _name to &quot;Jin&quot;)(set: _asked to true)(replace: ?nvm)[[[Done-&gt;DoneQuestionsFerret]]]]
+(set: _asked to false)(set: _name = &quot;the ferret&quot;)(link:&quot;Who are you?&quot;)[&quot;//Who are you?//&quot; you ask.
+
+&quot;//Oh, asking my name? How polite? I&#39;m Jin.//&quot;(set: _name to &quot;Jin&quot;)(set: _asked to true)(replace: ?nvm)[[[Done-&gt;DoneQuestionsFerret]]]]
 
 (link:&quot;What are you?&quot;)[&quot;//What are you?//&quot;
 
@@ -1324,7 +1334,19 @@ Unwilling to succumb to the crippling lust, you tear your attention away.(if: $p
 |nvm&gt;[(link:&quot;Never mind.&quot;)[After a moment of nothing, the horse chimes up.
 &quot;//What, waiting for me to introduce myself? I think the name was Brent.//&quot;
 
-[[Continue-&gt;DoneQuestionsFerret]]]]</tw-passagedata><tw-passagedata pid="117" name="LeaveFerret" tags="" position="919,3004" size="100,100">Without responding, you slip out the door, and the ferret just watches, making no motion to stop you. </tw-passagedata><tw-passagedata pid="118" name="ApproachFerret" tags="" position="799,2878" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="119" name="DoneQuestionsFerret" tags="" position="917,2747" size="100,100"></tw-passagedata><tw-passagedata pid="120" name="CreditsInfo" tags="noFooter" position="527,75" size="100,100">This game was developed by Lupex using Twine with Harlowe 3.2.1.</tw-passagedata></tw-storydata>
+[[Continue-&gt;DoneQuestionsFerret]]]]</tw-passagedata><tw-passagedata pid="117" name="LeaveFerret" tags="" position="919,3004" size="100,100">Without responding, you slip out the door, and the ferret just watches, making no motion to stop you. </tw-passagedata><tw-passagedata pid="118" name="ApproachFerret" tags="" position="799,2878" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="119" name="DoneQuestionsFerret" tags="" position="917,2747" size="100,100">&quot;So you are...?&quot; he asks again, waiting for you to now answer his question.
+
+* Explain the situation
+* Just leave.
+* [[Step up to him-&gt;ApproachFerret]] without saying a word.</tw-passagedata><tw-passagedata pid="120" name="CreditsInfo" tags="noFooter" position="527,75" size="100,100">This game was developed by Lupex using Twine 2 with Harlowe 3.2.1.
+
+&#39;&#39;Contact&#39;&#39;:
+Telegram: //lupexhex//
+&lt;a href=&quot;https://www.furaffinity.net/user/lupex/&quot;&gt;FurAffinity&lt;/a&gt;
+&lt;a href=&quot;https://lupex.sofurry.com/&quot;&gt;SoFurry&lt;/a&gt;
+
+
+(link-undo:&quot;Back&quot;)</tw-passagedata></tw-storydata>
 <script title="Twine engine code" data-main="harlowe">"use strict";var _slicedToArray=function(){return function(e,t){if(Array.isArray(e))return e;if(Symbol.iterator in Object(e))return function(e,t){var n=[],r=!0,i=!1,a=void 0;try{for(var o,s=e[Symbol.iterator]();!(r=(o=s.next()).done)&&(n.push(o.value),!t||n.length!==t);r=!0);}catch(e){i=!0,a=e}finally{try{!r&&s.return&&s.return()}finally{if(i)throw a}}return n}(e,t);throw new TypeError("Invalid attempt to destructure non-iterable instance")}}(),_typeof="function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function(e){return typeof e}:function(e){return e&&"function"==typeof Symbol&&e.constructor===Symbol&&e!==Symbol.prototype?"symbol":typeof e};function _defineProperty(e,t,n){return t in e?Object.defineProperty(e,t,{value:n,enumerable:!0,configurable:!0,writable:!0}):e[t]=n,e}function _toConsumableArray(e){if(Array.isArray(e)){for(var t=0,n=Array(e.length);t<e.length;t++)n[t]=e[t];return n}return Array.from(e)}!function(){
 /**
  * @license almond 0.3.3 Copyright jQuery Foundation and other contributors.
