@@ -17,6 +17,8 @@ var favicon  = document.createElement("link");
 favicon.rel  = "shortcut icon";
 favicon.href = "favicon.ico";
 document.head.appendChild(favicon);
+
+
 </script><tw-passagedata pid="1" name="Beginning" tags="noFooter" position="675,75" size="100,100">(background:(gradient: 90, 0,transparent,0.3786,#3e0f0a,0.6563,#400100,1,transparent))[&lt;h1 style=&quot;font-family:impact;font-size:160%;text-align:center;&quot;&gt;THE PRISON&lt;/h1&gt;]
 
 You&#39;re an ordinary guy doing ordinary things, when you are somehow captured. Trapped inside of a mysterious prison, you must find your way out - before succumbing to whatever &#39;dangers&#39; lurk within.
@@ -650,7 +652,7 @@ You&#39;ve escaped your cell.
 [[Continue-&gt;OutsideCell]]</tw-passagedata><tw-passagedata pid="52" name="Wait5" tags="" position="450,1475" size="100,100">Now that you&#39;re no longer drenched in cum, all you can do is wait, praying, despite the grim prospects.
 
 
-[[Continue-&gt;2CatApproach]]</tw-passagedata><tw-passagedata pid="53" name="Awaken" tags="" position="1600,2075" size="100,100">Pain thunders in your head, accompanying you as you awaken.
+[[Continue-&gt;2CatApproach]]</tw-passagedata><tw-passagedata pid="53" name="Awaken" tags="" position="1600,2075" size="100,100">Thunderous swirls of pain thrumming in your skull accompany you as you awaken.
 
 At first, you think that your eyes aren&#39;t adjusting right, but then you realize that the room is just really dark. You can&#39;t make out any details, save for some blinking lights around you.
 
@@ -725,7 +727,7 @@ TODO: follow brent and learna  bit about him, and can either accept his offer to
 			(else:)[You can use the following items:{
 		(for: each _item, ...$items)
 			[&lt;br&gt;- (link-reveal-goto:_item,_item)[(set: $prevPassage to (passage:)&#39;s &quot;name&quot;)]]}]](else:)[You cannot use items at this time.]
-]]</tw-passagedata><tw-passagedata pid="58" name="BrentEnter" tags="" position="1625,2350" size="100,100">A ray of light shines into the room from your right, illuminating your middle. You look over and see a very equine silhouette standing in a door way.
+]]</tw-passagedata><tw-passagedata pid="58" name="BrentEnter" tags="" position="1625,2350" size="100,100">A ray of light shines into the room from your right, illuminating your bare torso. You look over and see a very equine silhouette standing in a door way.
 
 &quot;&lt;i&gt;Good t&#39;see you woke, &lt;/i&gt;fella&lt;i&gt;,&lt;/i&gt;&quot; Brent says with a sharp menacing tone.
 
@@ -753,7 +755,8 @@ You know exactly what he&#39;s planning to do and quickly shut your mouth. It se
 &quot;&lt;i&gt;You&#39;ll wanna listen to this ol&#39; horsie, because either way, I&#39;m going to get what I want.&lt;/i&gt;&quot; Brent leans down, resting his elbow to the left of your head as he leans in close, white mane nearly tickling your nose. The smell of horse wraps around you as he smears his pre on your upper lip.
 
 
-* [[Comply]]. You&#39;re really not in a position to fight him, bound as you are.</tw-passagedata><tw-passagedata pid="60" name="RemainSilent" tags="" position="1500,2225" size="100,100">You clamp your mouth shut and don&#39;t make a single movement, praying that no one will notice you have awoken.
+* [[Comply]]. You&#39;re really not in a position to fight him, bound as you are.
+* Todo if mind is low enough</tw-passagedata><tw-passagedata pid="60" name="RemainSilent" tags="" position="1500,2225" size="100,100">You clamp your mouth shut and don&#39;t make a single movement, praying that no one will notice you have awoken.
 
 Were you not terrified out of your mind, and restrained, you might&#39;ve actually fallen asleep. Instead, your heart beats rapidly, expecting the worst at any moment.
 
@@ -831,7 +834,7 @@ Behind your anger, you hold your breath praying that Brent will buy your ruse.
 
 You know exactly what he&#39;s planning to do and quickly shut your mouth. It seems that Brent expected this, and doesn&#39;t immediately go for your mouth. Your eyes track him warily as he moves to the centre of the table.
 
-[[Continue-&gt;BrentEnter2]]</tw-passagedata><tw-passagedata pid="69" name="MakeUpLie3" tags="" position="1500,2975" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="70" name="Comply" tags="" position="1750,2625" size="100,100">You grimace, and then open your mouth, breathing in the smell of horse pre. He&#39;s right, there&#39;s nothing you can do. He&#39;s so powerful and strong, and you&#39;re so weak, not even counting the fact that you&#39;re naked and bound to a table.
+[[Continue-&gt;BrentEnter2]]</tw-passagedata><tw-passagedata pid="69" name="MakeUpLie3" tags="" position="1500,2975" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="70" name="Comply" tags="" position="1750,2625" size="100,100">You grimace, and then open your mouth, breathing in the smell of horse pre. He&#39;s right, there&#39;s nothing you can do. His might dwarfs you, making you feel even more prone than you already are, naked and bound to a table.
 
 &quot;&lt;i&gt;Good boy,&lt;/i&gt;&quot; he whispers, pouring the liquid into your mouth. After a second of hesitation, you swallow.
 
@@ -1098,14 +1101,14 @@ A short, black cat wearing a white lab coat of some sort inspects you with pierc
 
 
 * [[Bargain with him.-&gt;Bargain]] Surely he&#39;ll be more reasonable than Brent.
-* [[Ask some questions.-&gt;QuestionCat]] He looks capable of giving actual answers.</tw-passagedata><tw-passagedata pid="87" name="StaySilent" tags="" position="425,1850" size="100,100">You stay silent, waiting for it to pass by your cell. When it does, you discover that it is a short black furred cat wearing a labcoat of some sort. It glances at you.
+* [[Ask some questions.-&gt;QuestionCat]] He looks capable of giving actual answers.</tw-passagedata><tw-passagedata pid="87" name="StaySilent" tags="" position="461,1855" size="100,100">You stay silent, waiting for it to pass by your cell. When it does, you discover that it is a short black furred cat wearing a labcoat of some sort. It glances at you.
 
 &quot;//I see you&#39;ve awoken,//&quot; it states blandly(if: $swallowedBrentCum)[ before adding, &quot;//and I can see why.//&quot;](else:)[.]
 
 
 * [[Keep silent.-&gt;KeepSilent]] You can tell he&#39;s not going to be of help either.
 * [[Bargain with him.-&gt;Bargain]] Surely he&#39;ll be more reasonable than Brent.
-* [[Ask some questions.-&gt;QuestionCat]] He looks capable of giving actual answers.</tw-passagedata><tw-passagedata pid="88" name="Bargain" tags="" position="325,2000" size="100,100">Stepping up to the metal bars, you once again try to figure out a compromise to get you out.(if: $dirty &gt; 0)[You see his tiny black nose twitch a bit, evidently getting a clear sense of what you did with Brent.]
+* [[Ask some questions.-&gt;QuestionCat]] He looks capable of giving actual answers.</tw-passagedata><tw-passagedata pid="88" name="Bargain" tags="" position="405,2018" size="100,100">Stepping up to the metal bars, you once again try to figure out a compromise to get you out.(if: $dirty &gt; 0)[You see his tiny black nose twitch a bit, evidently getting a clear sense of what you did with Brent.]
 
 &quot;//I don&#39;t have anything, but there&#39;s gotta be something I can do to change your mind, right?//&quot;
 
@@ -1160,28 +1163,28 @@ Before you can ask another question, he cuts you off.
 (hide: ?q3)}]]|nvm&gt;[[[
 
 
-Never mind.-&gt;DoneCatQuestions]]]</tw-passagedata><tw-passagedata pid="90" name="KeepSilent" tags="" position="150,2025" size="100,100">With your mouth held defiantly shut, you refuse to even give them the benefit of your attention. This seems to irritate the cat, but you continue ignoring them.
+Never mind.-&gt;DoneCatQuestions]]]</tw-passagedata><tw-passagedata pid="90" name="KeepSilent" tags="" position="313,1860" size="100,100">With your mouth held defiantly shut, you refuse to even give them the benefit of your attention. This seems to irritate the cat, but you continue ignoring them.
 
 The cat makes an annoyed sound and then walks up to the cell, unlocking and opening the door.
 
 
 * Did he just unlock the door? [[Make a break for it-&gt;BoltCat]].
-* [[Continue ignoring him.-&gt;KeepIgnore]]</tw-passagedata><tw-passagedata pid="91" name="BoltCat" tags="" position="150,1900" size="100,100">(if: $swallowedBrentCum)[Once again,](else:)[Every muscle comes to life as] you sprint towards the exit at top speed.
+* [[Continue ignoring him.-&gt;KeepIgnore]]</tw-passagedata><tw-passagedata pid="91" name="BoltCat" tags="" position="11,1840" size="100,100">(if: $swallowedBrentCum)[Once again,](else:)[Every muscle comes to life as] you sprint towards the exit at top speed.
 
 The cat startles, reacting faster than you imagined, but (if: $swallowedBrentCum)[unlike Brent,] they don&#39;t have the physical means necessary to stop you. Harshly, you shove them out of the doorway, and they stumble backward.
 
 //You&#39;ve escaped, but now you&#39;re on the run!//
 
 
-[[Run!-&gt;OnTheRun]]</tw-passagedata><tw-passagedata pid="92" name="OnTheRun" tags="" position="150,1775" size="100,100">You&#39;ve gotten past the cat. Which way do you run?
+[[Run!-&gt;OnTheRun]]</tw-passagedata><tw-passagedata pid="92" name="OnTheRun" tags="" position="11,1715" size="100,100">You&#39;ve gotten past the cat. Which way do you run?
 
-[[◄ Left-&gt;OnTheRunLeft]] | [[Right ►-&gt;OnTheRunRight]]</tw-passagedata><tw-passagedata pid="93" name="OnTheRunLeft" tags="" position="150,1650" size="100,100">Dashing to the right your heart pounds, not daring to look back as cells identical to yours whiz by. You hope that there&#39;s a way out, or at least someplace to hide.
-
-
-[[Continue-&gt;OnTheRunLeft2]] </tw-passagedata><tw-passagedata pid="94" name="OnTheRunRight" tags="" position="275,1725" size="100,100">You run past many cells before reaching the end of the hallway. To your left is a staircase up.
+[[◄ Left-&gt;OnTheRunLeft]] | [[Right ►-&gt;OnTheRunRight]]</tw-passagedata><tw-passagedata pid="93" name="OnTheRunLeft" tags="" position="11,1590" size="100,100">Dashing to the right your heart pounds, not daring to look back as cells identical to yours whiz by. You hope that there&#39;s a way out, or at least someplace to hide.
 
 
-[[▲ Up stairs-&gt;OnTheRunUp]]</tw-passagedata><tw-passagedata pid="95" name="OnTheRunLeft2" tags="" position="150,1525" size="100,100">When you reach the end of the hallway, you spot a wide staircase leading up. As you turn and speed up the stairs, you see the cat nimbly charging down the hallway after you.
+[[Continue-&gt;OnTheRunLeft2]] </tw-passagedata><tw-passagedata pid="94" name="OnTheRunRight" tags="" position="131,1687" size="100,100">You run past many cells before reaching the end of the hallway. To your left is a staircase up.
+
+
+[[▲ Up stairs-&gt;OnTheRunUpSouth]]</tw-passagedata><tw-passagedata pid="95" name="OnTheRunLeft2" tags="" position="11,1465" size="100,100">When you reach the end of the hallway, you spot a wide staircase leading up. As you turn and speed up the stairs, you see the cat nimbly charging down the hallway after you.
 
 At the top, there&#39;s a set of doors. Shoving them open, you slam into Brent&#39;s brick like body, crashing down to the ground roughly.
 
@@ -1190,7 +1193,7 @@ At the top, there&#39;s a set of doors. Shoving them open, you slam into Brent&#
 &quot;//You actually did something useful,//&quot; the cat says to Brent. &quot;//Thank you.//&quot; The words could not have contained any less sincerity.
 
 
-[[Oh no.-&gt;FailEscapeHallway]]</tw-passagedata><tw-passagedata pid="96" name="FailEscapeHallway" tags="" position="150,1400" size="100,100">Brent is still gripping you tightly, despite the cat having already injected you with something, but you don&#39;t care, or notice. Instead you&#39;re focused on the fact that Brent is holding you tight against his sturdy chest, his crotch squished up hot against your naval. Your cheeks are shoved into that perfect body, and almost of its own accord, your hips begin jerking, jabbing your rock hard dick into Brent&#39;s sagging scrotum. When did you get so horny?
+[[Oh no.-&gt;FailEscapeHallway]]</tw-passagedata><tw-passagedata pid="96" name="FailEscapeHallway" tags="" position="11,1340" size="100,100">Brent is still gripping you tightly, despite the cat having already injected you with something, but you don&#39;t care, or notice. Instead you&#39;re focused on the fact that Brent is holding you tight against his sturdy chest, his crotch squished up hot against your naval. Your cheeks are shoved into that perfect body, and almost of its own accord, your hips begin jerking, jabbing your rock hard dick into Brent&#39;s sagging scrotum. When did you get so horny?
 
 &quot;I&#39;m glad you&#39;re here to deal with that. Do whatever you please and see that he&#39;s transferred to 06 when you&#39;re done,&quot; the cute cat says as he walks off. A great urge to pin him down and rip off the prudish lab coat to feel up his undoubdtedly sexy body overtakes you, but Brent&#39;s own cock has emerged from his sheath, pulling up his loincloth. Your attention snaps back to his glorious appendage. Brent releases his hug and you instantly drop to your knees, not wasting a second in jamming Brent&#39;s growing erection - soiled loincloth and all -  into your mouth. While you suckle on the salty, musky end, your hands sweep back, groping Brent&#39;s toned butt cheeks.
 
@@ -1204,15 +1207,19 @@ Click to restart (click:&quot;restart&quot;)[(restart:)]</tw-passagedata><tw-pas
 
 
 * [[Agree to go.-&gt;AgreeToCat]]
-* [[Refuse to go.-&gt;RefuseCat]]</tw-passagedata><tw-passagedata pid="98" name="OnTheRunUp" tags="" position="275,1600" size="100,100">You pound up the stairs, nearly completely out of breath by this point. A long hallway stretches before you and for a second it feels as though you&#39;ve somehow been transported into a hospital, but the fear of being caught drives that sesnation away.
+* [[Refuse to go.-&gt;RefuseCat]]</tw-passagedata><tw-passagedata pid="98" name="OnTheRunUpSouth" tags="" position="132,1550" size="100,100">You pound up the stairs, nearly completely out of breath by this point. A long hallway stretches before you and for a second it feels as though you&#39;ve somehow been transported into a hospital, but the fear of being caught drives that sesnation away.
 
 You are at the south end of a long hallway that, unlike the one outside your cell, looks less like a dungeon and more like a medical facility. Fluorescent lights line the ceiling, the floor is linoleum, and the walls are a bleached white.
 
-Several swing doors line the right side of the hall</tw-passagedata><tw-passagedata pid="99" name="header" tags="header" position="1050,75" size="100,100">(hidden:)|header&gt;[insert stuff over time, or occasional quips here (dirty thoughts, being dirty, tf progress, &quot;party&quot; member quips}]{
+Several swing doors line the right side of the hall and a key card locked door is to the left.
+
+
+* [[Keep running!-&gt;OnTheRunUpNorth]]
+* [[Duck into one of the rooms!-&gt;OnTheRunRoomSouth]]</tw-passagedata><tw-passagedata pid="99" name="header" tags="header" position="1050,75" size="100,100">(hidden:)|header&gt;[insert stuff over time, or occasional quips here (dirty thoughts, being dirty, tf progress, &quot;party&quot; member quips}]{
 }</tw-passagedata><tw-passagedata pid="100" name="PrisonHallwayLeftEnd" tags="" position="825,2375" size="100,100">This end of the hallway has a staircase leading up.
 
 
-[[▲ Up stairs-&gt;TestAreaEntrance]] | [[East ►-&gt;PrisonHallwayLeft]]</tw-passagedata><tw-passagedata pid="101" name="TestAreaEntrance" tags="canUseItems" position="700,2475" size="100,100">TODO this is the entrance from the sort of living quarters and stuff to the test area. it has labcoats and gowns you cna sue</tw-passagedata><tw-passagedata pid="102" name="AgreeToCat" tags="" position="425,2250" size="100,100">Reluctantly you nod. Part of you misses Brent and his obvious wants over this cat&#39;s engimatic intentions.
+[[▲ Up stairs-&gt;TestAreaEntrance]] | [[East ►-&gt;PrisonHallwayLeft]]</tw-passagedata><tw-passagedata pid="101" name="TestAreaEntrance" tags="canUseItems" position="700,2475" size="100,100">TODO this is the entrance from the sort of living quarters and stuff to the test area. it has labcoats and gowns you cna sue</tw-passagedata><tw-passagedata pid="102" name="AgreeToCat" tags="" position="120,2219" size="100,100">Reluctantly you nod. Part of you misses Brent and his obvious wants over this cat&#39;s engimatic intentions.
 
 &quot;//Thank you,//&quot; he says curtly as he unlocks and opens the door.
 
@@ -1229,7 +1236,7 @@ Several swing doors line the right side of the hall</tw-passagedata><tw-passaged
 You watch him go in silence, wondering what is going to become of you.
 
 
-[[Wait-&gt;WaitAfterCat]]</tw-passagedata><tw-passagedata pid="105" name="WaitAfterCat" tags="" position="575,2600" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="106" name="KeepIgnore" tags="" position="150,2150" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="107" name="NorthEndTesthall" tags="" position="1200,3003" size="100,100">You are at the north end of a long hallway that, unlike the one outside your cell, looks less like a dungeon and more like a medical facility. Fluorescent lights line the ceiling, the floor is linoleum, and the walls are a bleached white.
+[[Wait-&gt;WaitAfterCat]]</tw-passagedata><tw-passagedata pid="105" name="WaitAfterCat" tags="" position="575,2600" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="106" name="KeepIgnore" tags="" position="286,2014" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="107" name="NorthEndTesthall" tags="" position="1200,3003" size="100,100">You are at the north end of a long hallway that, unlike the one outside your cell, looks less like a dungeon and more like a medical facility. Fluorescent lights line the ceiling, the floor is linoleum, and the walls are a bleached white.
 
 Several swing doors line the right side of the hall, all with placards reading &#39;B3-&#39; followed by two digits. On the left of the hall, there is a janitor closet, denoted by its own placard. 
 
@@ -1263,7 +1270,7 @@ The cabinets reach nearly to the ceiling and are unlabelled. There is no visible
 The table has a short metal lip on one end and several straps attached to its surface. On one side, there are a set of controls, but none of them work at the moment, as reinforced by a red status light indicator.](hidden:)|cabinet&gt;[
 The cabinets reach nearly to the ceiling and are unlabelled. There is no visible lock on them, but the handles won&#39;t budge when you try to open it.](hidden:)|computer&gt;[The standard office desktop monitor is nothing extraordinary. The keyboard and trackpad are installed right onto the surface of the bench and no manner of keystrokes wakes the black screen and though you look around, you can&#39;t even find the desktop itself.]
 
-(if: $metJin is false)[As you (if: $perroFollowing is true)[and Perro ]enter, you immediately notice someone by the computer. Your entrance causes them to jump in surprise, and they rapidly spin to face you. They are a ferret, wearing an unzipped sweater that does not fit, exposing their midriff, and shorts that don&#39;t really fit either. They stare at you for a second.
+(if: $metJin is false)[As you(if: $perroFollowing is true)[ and Perro ]enter, you immediately notice someone by the computer. Your entrance causes them to jump in surprise, and they rapidly spin to face you. They are a ferret, wearing an unzipped sweater that does not fit, exposing their midriff, and shorts that don&#39;t really fit either. They stare at you for a second.
 
 &quot;//Wait, who are you(if: $perroFollowing is true)[ two]? I&#39;ve never seen you before.//&quot;(if: $clothing is &quot;none&quot;)[ His eyes drop down slightly to your exposed ($dick:) and you see him take a breath. &quot;//I swear, if you jump me like all those other horndogs,//&quot; he warns, though his eyes keep flitting back down.]
 
@@ -1304,14 +1311,14 @@ It takes you a good few minutes before you come back to yourself, blinking back 
 
 You&#39;re still blushing furiously as you notice the faint bulge of your not fully subdued knot, even sheathed, and your now furred sack that droops a bit lower down.
 
-Unwilling to succumb to the crippling lust, you tear your attention away.(if: $perroFollowing is true)[ Meanwhile, Perro stares in shock.]{
+Unwilling to succumb to the crippling lust, you tear your attention away.(if: $perroFollowing is true)[ Meanwhile, Perro just stares in shock.]{
 (set: $player&#39;s dick to &quot;canine-horse&quot;)
 ($mindChange: 10)
 }]
 
 
 (link-goto: &quot;Continue&quot;, $prevPassage){
-(set: $items to it - (a:&quot;Cloudy Flask&quot;))}</tw-passagedata><tw-passagedata pid="115" name="FollowCat" tags="" position="450,2475" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="116" name="QuestionFerret" tags="" position="1068,2853" size="100,100">They stare at you, waiting for a response.
+(set: $items to it - (a:&quot;Cloudy Flask&quot;))}</tw-passagedata><tw-passagedata pid="115" name="FollowCat" tags="" position="255,2370" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="116" name="QuestionFerret" tags="" position="1068,2853" size="100,100">They stare at you, waiting for a response.
 
 (set: _asked to false)(set: _name = &quot;the ferret&quot;)(link:&quot;Who are you?&quot;)[&quot;//Who are you?//&quot; you ask.
 
@@ -1346,7 +1353,24 @@ Telegram: //lupexhex//
 &lt;a href=&quot;https://lupex.sofurry.com/&quot;&gt;SoFurry&lt;/a&gt;
 
 
-(link-undo:&quot;Back&quot;)</tw-passagedata></tw-storydata>
+(link-undo:&quot;Back&quot;)</tw-passagedata><tw-passagedata pid="121" name="OnTheRunUpNorth" tags="" position="129,1313" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="122" name="OnTheRunRoomSouth" tags="" position="267,1319" size="100,100">You dash into one of the rooms at random, but find no where to hide. The room is decently sized, but fairly bare, containing metal cabinets, a metal table and what looks like a lab bench.
+
+You don&#39;t have much time to decide what to do.
+
+
+* Try the [[computer-&gt;OnTheRunRoomComputer]].
+* Search the [[cabinets-&gt;OnTheRunRoomCabinets]].
+* Check the [[table-&gt;OnTheRunRoomTable]].</tw-passagedata><tw-passagedata pid="123" name="OnTheRunRoomComputer" tags="" position="399,1175" size="100,100">You sprint over to the computer, but it&#39;s locked with a password, and no amount of bushing mashing does you any good.
+
+Suddenyl, you feel a prick in your arm.
+
+
+[[Uh oh.-&gt;FailEscapeRoom]]</tw-passagedata><tw-passagedata pid="124" name="OnTheRunRoomCabinets" tags="" position="144,1170" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="125" name="OnTheRunRoomTable" tags="" position="280,1175" size="100,100">You scramble over to the table, but with 
+
+Suddenyl, you feel a prick in your arm.
+
+
+[[Uh oh.-&gt;FailEscapeRoom]]</tw-passagedata><tw-passagedata pid="126" name="FailEscapeRoom" tags="" position="399,1295" size="100,100">Double-click this passage to edit it.</tw-passagedata></tw-storydata>
 <script title="Twine engine code" data-main="harlowe">"use strict";var _slicedToArray=function(){return function(e,t){if(Array.isArray(e))return e;if(Symbol.iterator in Object(e))return function(e,t){var n=[],r=!0,i=!1,a=void 0;try{for(var o,s=e[Symbol.iterator]();!(r=(o=s.next()).done)&&(n.push(o.value),!t||n.length!==t);r=!0);}catch(e){i=!0,a=e}finally{try{!r&&s.return&&s.return()}finally{if(i)throw a}}return n}(e,t);throw new TypeError("Invalid attempt to destructure non-iterable instance")}}(),_typeof="function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function(e){return typeof e}:function(e){return e&&"function"==typeof Symbol&&e.constructor===Symbol&&e!==Symbol.prototype?"symbol":typeof e};function _defineProperty(e,t,n){return t in e?Object.defineProperty(e,t,{value:n,enumerable:!0,configurable:!0,writable:!0}):e[t]=n,e}function _toConsumableArray(e){if(Array.isArray(e)){for(var t=0,n=Array(e.length);t<e.length;t++)n[t]=e[t];return n}return Array.from(e)}!function(){
 /**
  * @license almond 0.3.3 Copyright jQuery Foundation and other contributors.
