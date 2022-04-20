@@ -16,21 +16,24 @@
 }
 
 .visited { color: #4169E1; }
-.visited:hover { color: DeepSkyBlue; }</style><script role="script" id="twine-user-script" type="text/twine-javascript">// Set icon
+.visited:hover { color: DeepSkyBlue; }</style><script role="script" id="twine-user-script" type="text/twine-javascript">
+// Set icon
 var favicon  = document.createElement("link");
 favicon.rel  = "shortcut icon";
 favicon.href = "favicon.ico";
 document.head.appendChild(favicon);
 
 
-</script><tw-passagedata pid="1" name="Beginning" tags="noFooter" position="675,75" size="100,100">(background:(gradient: 90, 0,transparent,0.3786,#3e0f0a,0.6563,#400100,1,transparent))[&lt;h1 style=&quot;font-family:impact;font-size:160%;text-align:center;&quot;&gt;THE PRISON&lt;/h1&gt;]
-
-Trapped inside of a mysterious prison, you must find your way out - before succumbing to whatever &#39;dangers&#39; lurk within. Expect lots of gay. 
+// Figure out how many people actually load up the game
+$.getJSON("https://api.countapi.xyz/hit/lupexle-woof/prison", function(response) {
+     //Don't care to use the value $("#visits").text(response.value);
+});</script><tw-passagedata pid="1" name="Beginning" tags="noFooter" position="675,75" size="100,100">(background:(gradient: 90, 0,transparent,0.3786,#3e0f0a,0.6563,#400100,1,transparent))[&lt;h1 style=&quot;font-family:impact;font-size:160%;text-align:center;&quot;&gt;THE PRISON&lt;/h1&gt;]
+Trapped inside of a mysterious prison, you must find your way out - before succumbing to whatever &#39;dangers&#39; lurk within. Expect lots of gay and mind stuff. {(set: _kinksUp to false) 
+(link-rerun:&quot;Full kinks:&quot;)[(if: _kinksUp is true)[(hide: ?kinks)(set: _kinksUp to false)](else:)[(show: ?kinks)(set: _kinksUp to true)]]}(hidden:)|kinks&gt;[ //Gay, Mind Changes, Corruption, Transformation, Musk, Non-Con, idk others but who knows how to tag them all//]
 
 &lt;i&gt;Can you escape The Prison or will you end up being a part of whatever nefarious plans await within?&lt;/i&gt;
 
 &lt;b&gt;(text-colour:#f00)[Disclaimer: This game contains sexual content and furry fetishes, so if you are not of the legal age to view adult content, do not proceed.]&lt;/b&gt;
-
 &lt;p style=&quot;text-align:center;&quot;&gt;&lt;b&gt;[[Click to Begin-&gt;Begin]]&lt;/b&gt;&lt;/p&gt;
 &lt;p style=&quot;text-align:left;&quot;&gt;[[Info-&gt;CreditsInfo]]&lt;span style=&quot;float:right;&quot;&gt;&lt;small&gt;Version 2.2: Catto n&#39; Dogger&lt;/small&gt;&lt;/span&gt;&lt;/p&gt;</tw-passagedata><tw-passagedata pid="2" name="Begin" tags="" position="675,200" size="100,100">You groan. Where are you? What happened?
 
@@ -40,7 +43,7 @@ You are in a windowless concrete cell, about eight feet by eight feet. Cracks li
 
 You were lying on a patch of scratchy hay, and the only thing you&#39;re wearing is oddly a blue hospital gown, which not only makes you physically, but mentally uncomfortable. Why are you wearing this?
 
-You hear footsteps outside approaching your cell.
+You hear footsteps outside approaching your cell. ($transform &quot;tail&quot; &quot;
 
 
 * [[Attempt to hide-&gt;Hide]] from the approaching person.
@@ -951,6 +954,7 @@ You&#39;re not entirely sure what this is, but you guess it&#39;s some kind of h
 [[Move on-&gt;PrisonHallwayRight]]. There doesn&#39;t seem to be anything you can do here.</tw-passagedata><tw-passagedata pid="80" name="startup" tags="startup" position="925,75" size="100,100">{
 (set: $brentBound to false)
 (set: $cellKey to false)
+(set: $keyCard to false)
 (set: $brentJailed to false)
 (set: $swallowedBrentCum to false)
 (set: $metPerro to false)
@@ -964,7 +968,7 @@ You&#39;re not entirely sure what this is, but you guess it&#39;s some kind of h
 (set: $dirty to 0)
 
 (set: $clothing to &quot;gown&quot;)
-
+(set: $nonHumanParts to 0)
 (set: $player to (dm:
 	&quot;head&quot;,&quot;human&quot;,
 	&quot;body&quot;,&quot;human&quot;,
@@ -1003,9 +1007,9 @@ You&#39;re not entirely sure what this is, but you guess it&#39;s some kind of h
 	(set: _legs to $player&#39;s &quot;legs&quot;)
 	
 	(if:+_legs is &quot;horse&quot;)[
-		(set: _text to (either: &quot;digitigrade legs&quot;, &quot;lightly furred arms&quot;))]
+		(set: _text to (either: &quot;digitigrade legs&quot;, &quot;lightly furred legs&quot;))]
 	(else-if:_legs is &quot;dog&quot;)[
-		(set: _text to (either: &quot;furred arms&quot;, &quot;arms&quot;))]
+		(set: _text to (either: &quot;digitigrade legs&quot;, &quot;furred legs&quot;))]
 	(out-data: _text)]
 ))
 
@@ -1014,7 +1018,7 @@ You&#39;re not entirely sure what this is, but you guess it&#39;s some kind of h
 	(set: _tail to $player&#39;s &quot;tail&quot;)
 	
 	(if:_tail is &quot;horse&quot;)[
-		(set: _text to (either: &quot;equine tail&quot;, &quot;&quot;))]
+		(set: _text to (either: &quot;equine tail&quot;, &quot;whispy tail&quot;))]
 	(else-if:_tail is &quot;dog&quot;)[
 		(set: _text to (either: &quot;fluffy tail&quot;, &quot;furry tail&quot;))]
 	(out-data: _text)]
@@ -1028,6 +1032,8 @@ You&#39;re not entirely sure what this is, but you guess it&#39;s some kind of h
 		(set: _text to (either: &quot;flared&quot;, &quot;mottled&quot;, &quot;equine&quot;))]
 	(else-if:_dick is &quot;dog&quot;)[
 		(set: _text to (either: &quot;knotted&quot;, &quot;crimson&quot;, &quot;canine&quot;))]
+	(else-if:_dick is &quot;canine-horse&quot;)[
+		(set: _text to (either: &quot;knotted&quot;, &quot;chimeric&quot;, &quot;canine-like&quot;, &quot;equine-like&quot;))]
 		
 	(set: _text to it + &quot; &quot; + 
 		(either: &quot;cock&quot;, &quot;dick&quot;, &quot;length&quot;, &quot;penis&quot;, &quot;phallus&quot;, &quot;pecker&quot;))
@@ -1043,17 +1049,30 @@ You&#39;re not entirely sure what this is, but you guess it&#39;s some kind of h
 (set: $addItem to
 	(macro: str-type _item,
 		[(set: _result to &quot;&quot;)
-		(if: $items contains _item)[
-			(set: _result to &quot;You already have a &quot; + _item + &quot;.&quot;)]
-		(else-if: ($items&#39;s length + 1) &gt; $invSlots)[
-			(set: _result to &quot;You can&#39;t hold any more items.&quot;)]
-		(else:)[
-			(set: $items to it + (a:_item))
-			(set: _result to &quot;You add a &quot; + _item + &quot; to your inventory.&quot;)
-			]
-		(out-data: _result)
+		  (if: $items contains _item)[
+			  (set: _result to &quot;You already have a &quot; + _item + &quot;.&quot;)
+		  ] (else-if: ($items&#39;s length + 1) &gt; $invSlots)[
+			  (set: _result to &quot;You can&#39;t hold any more items.&quot;)
+		  ] (else:)[
+			  (set: $items to it + (a:_item))
+			  (set: _result to &quot;You add a &quot; + _item + &quot; to your inventory.&quot;)
+		  ]
+		  (out-data: _result)
 		]
 	)
+)
+
+(set: $transform to
+	(macro: str-type _bodyPart, str-type _type, [
+		(if: _type is not _bodyPart of $player)[
+			(if: _type is &quot;human&quot;)[
+				($set: $nonHumanParts to it - 1)
+			] (else:)[
+				($set: $nonHumanParts to it + 1)
+			]
+			(set: _bodyPart of $player to _type)
+		]
+	(output:)[]])
 )
 }&lt;link rel=&quot;preconnect&quot; href=&quot;https://fonts.gstatic.com&quot;&gt;
 &lt;link href=&quot;https://fonts.googleapis.com/css2?family=Roboto:wght@300&amp;display=swap&quot; rel=&quot;stylesheet&quot;&gt;</tw-passagedata><tw-passagedata pid="81" name="B3-06" tags="canUseItems" position="1850,2500" size="100,100">Inside the room there is an odd (link-reveal:&quot;metal table&quot;)[(t8n:&quot;dissolve&quot;)(show: ?table)], some manner of lab bench that extends against the opposing wall and a bit into the corner of the left wall, a camera in the corner and some (link-reveal:&quot;metal cabinets&quot;)[(t8n:&quot;dissolve&quot;)(show: ?cabinet)]. A (link-reveal:&quot;computer&quot;)[(t8n:&quot;dissolve&quot;)(show: ?computer)] sits on the part of the lab bench on the left wall.
@@ -1157,7 +1176,7 @@ Before you can ask another question, he cuts you off.
 (hide: ?q4)}]]
 |q3&gt;[(link:&quot;
 Why are you guarding this place?&quot;)[&quot;//Why are you guarding this place? Are you the one who put me in here?//&quot; you demand, possibly again.
-&quot;//I am most certainly //not// guarding this place, and to insinuate so is somewhat insulting.//&quot;{
+&quot;//I am most certainly //not// guarding this place, and to insinuate so is somewhat insulting.//&lt;br&gt;&quot;{
 (replace: ?nvm)[
 Before you can ask another question, he cuts you off.
 &quot;//Stop. I am not here to indulge your curiosities.//&quot;
@@ -1224,7 +1243,7 @@ Click to restart (click:&quot;restart&quot;)[(restart:)]</tw-passagedata><tw-pas
 
 
 * [[Agree to go.-&gt;AgreeToCat]]
-* [[Refuse to go.-&gt;RefuseCat]]</tw-passagedata><tw-passagedata pid="98" name="OnTheRunUpSouth" tags="" position="343,1477" size="100,100">You pound up the stairs, nearly completely out of breath by this point. A long hallway stretches before you and for a second it feels as though you&#39;ve somehow been transported into a hospital, but the fear of being caught drives that sesnation away.
+* [[Refuse to go.-&gt;RefuseCat]]</tw-passagedata><tw-passagedata pid="98" name="OnTheRunUpSouth" tags="" position="343,1477" size="100,100">You pound up the stairs, nearly completely out of breath by this point. A long hallway stretches before you and for a second it feels as though you&#39;ve somehow been transported into a hospital, but the fear of being caught drives that sensation away.
 
 You are at the south end of a long hallway that, unlike the one outside your cell, looks less like a dungeon and more like a medical facility. Fluorescent lights line the ceiling, the floor is linoleum, and the walls are a bleached white.
 
@@ -1233,15 +1252,15 @@ Several swing doors line the right side of the hall and a key card locked door i
 
 * [[Keep running!-&gt;OnTheRunUpNorth]]
 * [[Duck into one of the rooms!-&gt;OnTheRunRoomSouth]]</tw-passagedata><tw-passagedata pid="99" name="header" tags="header" position="1050,75" size="100,100">(hidden:)|header&gt;[insert stuff over time, or occasional quips here (dirty thoughts, being dirty, tf progress, &quot;party&quot; member quips}]{
-}</tw-passagedata><tw-passagedata pid="100" name="PrisonHallwayLeftEnd" tags="" position="1300,2375" size="100,100">This end of the hallway has a staircase leading up.
+}</tw-passagedata><tw-passagedata pid="100" name="PrisonHallwayLeftEnd" tags="canUseItems" position="1300,2375" size="100,100">This end of the hallway has a staircase leading up.
 
 
-[[▲ Up stairs-&gt;TestAreaEntrance]] | [[East ►-&gt;PrisonHallwayLeft]]</tw-passagedata><tw-passagedata pid="101" name="TestAreaEntrance" tags="canUseItems" position="1152,2495" size="100,100">TODO this is the entrance from the sort of living quarters and stuff to the test area. it has labcoats and gowns you cna sue</tw-passagedata><tw-passagedata pid="102" name="AgreeToCat" tags="" position="181,2131" size="100,100">Reluctantly you nod. Part of you misses Brent with his obvious desires over this cat&#39;s engimatic intentions.
+[[▲ Up stairs-&gt;TestAreaEntrance]] | [[East ►-&gt;PrisonHallwayLeft]]</tw-passagedata><tw-passagedata pid="101" name="TestAreaEntrance" tags="canUseItems" position="1152,2495" size="100,100">TODO this is the entrance from the sort of living quarters and stuff to the test area. it has labcoats and gowns you cna sue</tw-passagedata><tw-passagedata pid="102" name="AgreeToCat" tags="" position="181,2131" size="100,100">Reluctantly you nod. Part of you misses Brent with his straighforward, if perverse, desires over this cat&#39;s engimatic intentions.
 
 &quot;//Thank you,//&quot; he says curtly as he unlocks and opens the door.
 
 
-* This is your chance. Second times the charm and [[make a break for it.-&gt;BoltCat]]
+* This is your chance. [[Make a break for it.-&gt;BoltCat]]
 * He&#39;s no burly horse and now he&#39;s open. [[Try and knock him down-&gt;TackleFail]].
 * [[Follow the cat.-&gt;FollowCat]]</tw-passagedata><tw-passagedata pid="103" name="RefuseCat" tags="" position="499,2317" size="100,100">The sable cat sighs slightly.
 
@@ -1321,7 +1340,7 @@ Several two by fours have been nailed across the door here. The door doesn&#39;t
 You try your best but to no avail. If only you were a bit stronger.]
 
 
-[[▼ South-&gt;NorthEndTesthall]]</tw-passagedata><tw-passagedata pid="112" name="JanitorCloset" tags="" position="1550,3000" size="100,100">An actual janitor&#39;s closet. There&#39;s a broom, dustpan, mop, mop bucket, latex gloves, and various sanitization products.
+[[▼ South-&gt;NorthEndTesthall]]</tw-passagedata><tw-passagedata pid="112" name="JanitorCloset" tags="canUseItems" position="1550,3000" size="100,100">An actual janitor&#39;s closet. There&#39;s a broom, dustpan, mop, mop bucket, latex gloves, and various sanitization products.
 
 There&#39;s also toilet paper here, which is weird since you haven&#39;t seen any restrooms.
 
@@ -1348,13 +1367,15 @@ It takes you a good few minutes before you come back to yourself, blinking back 
 You&#39;re still blushing furiously as you notice the faint bulge of your not fully subdued knot, even sheathed, and your now furred sack that droops a bit lower down.
 
 Unwilling to succumb to the crippling lust, you tear your attention away.(if: $perroFollowing is true)[ Meanwhile, Perro just stares in shock.]{
-(set: $player&#39;s dick to &quot;canine-horse&quot;)
+($transform: &quot;dick&quot;, &quot;canine-horse&quot;)
 ($mindChange: 10)
 }]
 
 
 (link-goto: &quot;Continue&quot;, $prevPassage){
-(set: $items to it - (a:&quot;Cloudy Flask&quot;))}</tw-passagedata><tw-passagedata pid="115" name="FollowCat" tags="" position="73,2268" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="116" name="QuestionFerret" tags="" position="1561,2742" size="100,100">They stare at you, waiting for a response.
+(set: $items to it - (a:&quot;Cloudy Flask&quot;))}</tw-passagedata><tw-passagedata pid="115" name="FollowCat" tags="" position="73,2268" size="100,100">&#39;&#39;You follow the cat to a temporary(?) ending!&#39;&#39;
+
+Sorry, this path ends here. Why not try restarting and trying other paths?(click:&quot;restarting&quot;)[(restart:)]</tw-passagedata><tw-passagedata pid="116" name="QuestionFerret" tags="" position="1561,2742" size="100,100">They stare at you, waiting for a response.
 
 (set: _asked to false)(set: _name = &quot;the ferret&quot;)(link:&quot;Who are you?&quot;)[&quot;//Who are you?//&quot; you ask.
 
@@ -1392,7 +1413,13 @@ Unwilling to succumb to the crippling lust, you tear your attention away.(if: $p
 * Added humour because please don&#39;t take porn seriously
 
 
-This game was developed by Lupex using Twine 2 with Harlowe 3.
+This game was developed by Lupex using Twine 2 with Harlowe 3. No personal data is collected or stored, though Twine uses local storage to save your progress (I don&#39;t think it uses cookies). Every time the game is loaded I increment to see how many people play. Total plays: {&lt;b id=&quot;pageViews&quot;&gt;unable to reach counter website&lt;/b&gt;
+&lt;script&gt;
+$.getJSON(&quot;https://api.countapi.xyz/get/lupexle-woof/prison&quot;, 
+			function(response) {
+				$(&quot;#pageViews&quot;).text(response.value);
+			});
+&lt;/script&gt;}
 
 &#39;&#39;Contact&#39;&#39;:
 &lt;img src=&quot;https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/Telegram_2019_Logo.svg/2048px-Telegram_2019_Logo.svg.png&quot; alt=&quot;Telegram Username&quot; style=&quot;width:30px;height:30px;&quot;&gt; //lupexhex//
@@ -1462,7 +1489,7 @@ To your mild surprise, the feline&#39;s struggles ebb as the strength to escape 
 
 Breathing heavily and intermitantly lapping at the cum stained on his face, the veneer of indignation is slowly stripped away.
 
-&quot;This... accursed... arousal...&quot; he pants out, grinding more fully against you now.</tw-passagedata><tw-passagedata pid="134" name="GoAfterComeWith" tags="" position="900,2400" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="135" name="TackleCat" tags="" position="347,2099" size="100,100">With a burst of speed, you throw yourself at the cat. To your surprise, he reacts almost instantly, attempting to dodge out of the way, but you&#39;re too close and you manage to grapple onto his side sending him to the ground.
+&quot;//This... accursed... arousal...//&quot; he pants out, grinding more fully against you now.</tw-passagedata><tw-passagedata pid="134" name="GoAfterComeWith" tags="" position="900,2400" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="135" name="TackleCat" tags="" position="330,2095" size="100,100">With a burst of speed, you throw yourself at the cat. To your surprise, he reacts almost instantly, attempting to dodge out of the way, but you&#39;re too close and you manage to grapple onto his side sending him to the ground.
 
 You collapse atop the cat into the hallway outside your cell with a thud that leaves you both winded for half a second as the contents of his labcoat pockets spill all over the ground with a clatter. You see the key he used to open the door, a white key card, a loaded syringe, and a folded up paper.
 
@@ -1472,13 +1499,16 @@ Though he is fairly small of stature, there&#39;s no way you can pin him down an
 
 
 * Roll off him and [[run-&gt;OnTheRun]]!
-* Grab the key and run.
-* Grab the key card and run.
+* Grab the [[key and run-&gt;OnTheRunKey]].
+* Grab the [[key card and run-&gt;OnTheRunKeyCard]].
 * Grab the [[syringe and use it on him.-&gt;InjectCat]]
 * Grab the syringe and use it on yourself.
 * Grab the syringe and run.
 * Grab the paper and run.(if: $dirty &gt; 0)[
-* Roll to [[seduce the cat-&gt;SeduceCat]]. See just how powerful Brent&#39;s scent is against someone with better smell.]</tw-passagedata><tw-passagedata pid="136" name="TackleFail" tags="" position="220,1976" size="100,100">charge at him, deftly dodge, needled</tw-passagedata><tw-passagedata pid="137" name="ExplainFerret" tags="" position="1275,2750" size="100,100">You tell Jin your name and briefly explain the situation, cautiously optimistic of his ability to help as he nods sympathetically.
+* Roll to [[seduce the cat-&gt;SeduceCat]]. See just how powerful Brent&#39;s scent is against someone with better smell.]</tw-passagedata><tw-passagedata pid="136" name="TackleFail" tags="" position="13,1993" size="100,100">charge at him, deftly dodge, needled
+
+
+[[Uh oh.-&gt;FailEscapeHallway2]]</tw-passagedata><tw-passagedata pid="137" name="ExplainFerret" tags="" position="1275,2750" size="100,100">You tell Jin your name and briefly explain the situation, cautiously optimistic of his ability to help as he nods sympathetically.
 
 &quot;//I wish I could help, but there&#39;s not much I can do to help you, unfortunately.//&quot; He rubs his arm, not meeting your gaze. &quot;//I&#39;m as trapped as you are.//&quot;
 
@@ -1495,7 +1525,11 @@ Though he is fairly small of stature, there&#39;s no way you can pin him down an
 
 * [[Relent.-&gt;RelentFerret]]
 * [[&quot;//Punished?//&quot;-&gt;ClarificationFerret]]
-* [[Pressure him more.-&gt;PressureFerret]]</tw-passagedata><tw-passagedata pid="140" name="RelentFerret" tags="" position="1336,3139" size="100,100">You sigh.</tw-passagedata><tw-passagedata pid="141" name="PressureFerret" tags="" position="1070,3141" size="100,100">&quot;</tw-passagedata><tw-passagedata pid="142" name="ClarificationFerret" tags="" position="1211,3033" size="100,100">In response to your question, Jin says, &quot;//I don&#39;t know what kinds of things you&#39;ve already encountered, but I&#39;m lucky to still be able to think fairly clearly. I&#39;m gonna lose that if I&#39;m not obedient!//&quot;
+* [[Pressure him more.-&gt;PressureFerret]]</tw-passagedata><tw-passagedata pid="140" name="RelentFerret" tags="" position="1336,3139" size="100,100">You sigh.</tw-passagedata><tw-passagedata pid="141" name="PressureFerret" tags="" position="1070,3141" size="100,100">You lay on the pressure, trying to convince the reluctant ferret. Jin looks apprehensive, and refuses with meekly.
+
+Appeal with logic.
+Appeal morally.
+</tw-passagedata><tw-passagedata pid="142" name="ClarificationFerret" tags="" position="1211,3033" size="100,100">In response to your question, Jin says, &quot;//I don&#39;t know what kinds of things you&#39;ve already encountered, but I&#39;m lucky to still be able to think fairly clearly. I&#39;m gonna lose that if I&#39;m not obedient!//&quot;
 
 * Fair enough. [[Relent.-&gt;RelentFerret]]
 * That&#39;s selfish. [[Pressure-&gt;PressureFerret]] him into helping.</tw-passagedata><tw-passagedata pid="143" name="WaitAfterCat2" tags="" position="501,2716" size="100,100">You wait.
@@ -1507,7 +1541,7 @@ Though he is fairly small of stature, there&#39;s no way you can pin him down an
 [[And wait some more.-&gt;CatReturn]]]]
 </tw-passagedata><tw-passagedata pid="144" name="CatReturn" tags="" position="501,2866" size="100,100">Your void of a stomach grumbles its anger as struggling becomes increasingly arduous. There&#39;s not sense of time down here, and at one point, you thought you heard some sound coming down the hall, but now you wonder if it was a delirium manfuactured by your slowly draining sanity.
 
-To pass the time, you&#39;ve started arranging the hay on the floor to distract yourself. You&#39;re contemplating using the meager bits of straw to form an friend for yourself when there&#39;s a voice behind you.
+To pass the time, you&#39;ve started arranging the hay on the floor to distract yourself. You&#39;re contemplating using the meager bits of straw to form a friend for yourself when there&#39;s a voice behind you.
 
 &quot;//Excellent, you haven&#39;t perished yet. Drink this before you do so.//&quot;
 
@@ -1587,16 +1621,20 @@ It seems you may have escaped your cell. For real this time.
 
 
 [[Continue-&gt;NorthEndTesthall]]{
-(set: $escapedCat to true)}</tw-passagedata><tw-passagedata pid="155" name="OnTheRunRoomNorth" tags="" position="470,1402" size="100,100">TODO Ferret assist</tw-passagedata><tw-passagedata pid="156" name="InjectCat" tags="" position="191,2396" size="100,100">While he&#39;s still partially immobilized beneath you, you snatch the syringe and jab it into him, thrusting down on the plunger as ahrd as you can. You barely get through half of it before the cat knocks you off and dislodges the syringe in a burst of strength.
+(set: $escapedCat to true)}</tw-passagedata><tw-passagedata pid="155" name="OnTheRunRoomNorth" tags="" position="470,1402" size="100,100">TODO Ferret assist</tw-passagedata><tw-passagedata pid="156" name="InjectCat" tags="" position="191,2396" size="100,100">While he&#39;s still partially immobilized beneath you, you snatch the syringe and jab it into him, thrusting down on the plunger as hard as you can. You barely get through half of it before the cat knocks you off and dislodges the syringe in a burst of strength.
 
 For a fraction of a second, you worry that you should have injected yourself instead, but then the cat lets out a mewl and begins rubbing at his groin.
 
-&quot;I&#39;m going to kill you! I&#39;m- I&#39;m going to ki-&quot; the vehemence behind his words falter as his now tremling paws struggle to undo the buttons of his labcoat. &quot;I&#39;m going to fu... I&#39;m going to fornicate with you!&quot; he moans out as he finally just yanks apart his labcoat to reveal his slender, black furred body, and his little pink kitty cock, already at full attention and leaking. He rubs at his exposed groin for a second, grumbling and muttering in a haze before his nose twitches and he swivels onto his knees drunkedly before crawling towards you.
+&quot;//I&#39;m going to kill you! I&#39;m- I&#39;m going to ki-//&quot; the vehemence behind his words falter as his now trembling paws struggle to undo the buttons of his labcoat. &quot;//I&#39;m going to fu... I&#39;m going to fornicate with you!//&quot; he moans out as he gives up and instead yanks apart his labcoat to reveal his slender, black furred body - and his little pink kitty cock already at full attention and leaking. He rubs at his exposed groin for a second, grumbling and muttering in a haze before his nose twitches and he swivels onto his knees drunkedly before crawling towards you.
 
 You, in the meantime, were on your back, propped up by your elbows as you watch the scene unfold, a bit stunned. Before you react, the cat has pushed apart your legs and shoved his snout against your groin, nuzzling it and lapping at it with his sandpapery tongue. The unexpected sensation catches you by surprise, 
 
 TODO &quot;i ahte you... not being in me
-option for butt, felatio or 69</tw-passagedata></tw-storydata>
+option for butt, felatio or 69</tw-passagedata><tw-passagedata pid="157" name="OnTheRunKey" tags="" position="223,1767" size="100,100">You snatch the key card from the ground and book it!(set: $cellKey to true)
+
+[[Run!-&gt;OnTheRun]]</tw-passagedata><tw-passagedata pid="158" name="OnTheRunKeyCard" tags="" position="219,1967" size="100,100">You snatch the key card from the ground and book it!(set: $keyCard to true)
+
+[[Run!-&gt;OnTheRun]]</tw-passagedata></tw-storydata>
 <script title="Twine engine code" data-main="harlowe">"use strict";var _slicedToArray=function(){return function(e,t){if(Array.isArray(e))return e;if(Symbol.iterator in Object(e))return function(e,t){var n=[],r=!0,a=!1,i=void 0;try{for(var o,s=e[Symbol.iterator]();!(r=(o=s.next()).done)&&(n.push(o.value),!t||n.length!==t);r=!0);}catch(e){a=!0,i=e}finally{try{!r&&s.return&&s.return()}finally{if(a)throw i}}return n}(e,t);throw new TypeError("Invalid attempt to destructure non-iterable instance")}}(),_typeof="function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function(e){return typeof e}:function(e){return e&&"function"==typeof Symbol&&e.constructor===Symbol&&e!==Symbol.prototype?"symbol":typeof e};function _defineProperty(e,t,n){return t in e?Object.defineProperty(e,t,{value:n,enumerable:!0,configurable:!0,writable:!0}):e[t]=n,e}function _toConsumableArray(e){if(Array.isArray(e)){for(var t=0,n=Array(e.length);t<e.length;t++)n[t]=e[t];return n}return Array.from(e)}!function(){
 /**
  * @license almond 0.3.3 Copyright jQuery Foundation and other contributors.
